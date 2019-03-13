@@ -7,10 +7,34 @@
         <link rel="shortcut icon" type="image/png" href="favicon.ico">
     </head>
     <body>
+        <div class="body">
+        <div id="mask">
+            <div class="skyCloud cS1"></div>
+            <div class="skyCloud cS2"></div>
+            <div class="skyCloud cS3"></div>
+            <div class="skyCloud cS4"></div>
+            <div class="spotlight"></div>
+            <div class="spotlight"></div>
+        </div>
          <div class="sound soundOn"></div>
          <audio class="aud" src="audio/bgm.mp3" loop></audio>
         <div class="container">
             <div class="pop"></div>
+            <div class="pop-login">
+                <div class="pop-close3"></div>
+                 <div id="Login">
+                        <div style=""><input id="login-userid" name="lg_userid" class="loginuser" value="CA" type="text"><br><span class="reg"><a tabindex="-1">立即注册</a></span></div>
+                        <div style="">
+                            <div>
+                                <input name="lg_pwd" id="login-password" type="password" class="loginpw" onfocus="this.style.backgroundPosition='-100px 0px'" onblur="if(this.value.length==0) this.style.backgroundPosition='-200px 0px'" maxlength="14" placeholder="密码">
+                                <button id="login-submit" type="submit" class="loginbtn">立即登录</button>
+                                <span id="login-hint" style="display: none">登录中..</span>
+                                <br>
+                                <span class="pas"><a tabindex="-1">忘记密码</a></span>
+                            </div>
+                        </div>
+                    </div>      
+            </div>
             <div class="pop-rules">
                 <div class="pop-close2"></div>
                 <div class="pop-rules-content">
@@ -77,6 +101,48 @@
                 </div>
                 <!-- claw machine -->
                 <div class="claw-game">
+                    <div class="led1">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="led2">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
                     <div class="claw">
                         <div class="claw-content">
                             <div class="claw-chain"></div>
@@ -178,6 +244,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     	<script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/jquery.carouFredSel-6.0.4-packed.js"></script>

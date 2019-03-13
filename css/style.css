@@ -5,7 +5,7 @@
     font-family:Microsoft YaHei
 }
 
-body{
+.body{
 	background-image:url(../img/bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -43,7 +43,6 @@ body{
 .aud,embed{
 	position: absolute;
 	z-index: -99;
-	display: none;
 }
 
 .title{
@@ -219,6 +218,105 @@ div[class*="float"]{
 	     -o-transform: translateX(-50%);
 	        transform: translateX(-50%);
 }
+ul{
+    list-style-type: none;
+}
+
+.led1,.led2{
+       position: absolute;
+      width: 22px;
+    height: 626px;
+}
+.led1{
+      left: 163px;
+    top: 139px;
+    /*display: none;*/
+    animation: opac infinite step-start 300ms;
+}
+.led2{
+      left: 764px;
+    top: 139px;
+    animation: opac infinite step-start 300ms;
+}
+
+.led1 ul li:nth-child(odd){
+        background-image: url(../img/inactive-led.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    left: 50%;
+    top: 8px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: relative;
+    margin-top: 22.2px;
+    top: -14px;
+}
+
+.led1 ul li:nth-child(even){
+        background-image: url(../img/active-led.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    left: 50%;
+    top: 8px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: relative;
+    margin-top: 22px;
+    top: -15px;
+}
+
+
+.led2 ul li:nth-child(odd){
+        background-image: url(../img/inactive-led.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    left: 50%;
+    top: 8px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: relative;
+    margin-top: 22.2px;
+    top: -14px;
+}
+
+.led2 ul li:nth-child(even){
+        background-image: url(../img/active-led.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    left: 50%;
+    top: 8px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: relative;
+    margin-top: 22px;
+    top: -15px;
+}
+
+
 
 .wrapper{
 	position: relative;
@@ -727,6 +825,159 @@ background-position: center;
 	display: none;
 	    top: 33px;
 }
+
+.pop-login{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/login-bg.png);
+    background-repeat: no-repeat;
+    width: 579px;
+    height: 676px;
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+       -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+         -o-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    display: none;
+}
+
+.pop-close3{
+         position: relative;
+    width: 71px;
+    height: 77px;
+    background-size: cover;
+    background-image: url(../img/close2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 564px;
+    cursor: pointer;
+    top: 8px;
+    z-index: 10;
+}
+
+
+/*login button*/
+ #Login{
+  position: absolute;
+    /* right: -233px; */
+     top: 175px; 
+    /* overflow: hidden; */
+    /* margin: 20px 0 2px 30px; */
+/*    height: 60px;*/
+    z-index: 11;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+       -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+ .loginuser {
+       height: 62px;
+    border: 1px solid #972229;
+    background: url(../images/loginbarbg.jpg) no-repeat;
+    width: 390px;
+    padding: 0 5px;
+    color: #ffffff;
+    font-size: 18pt;
+    background-color: #f10000;
+    /* border: 2px solid white; */
+    /* border-radius: 10px; */
+}
+ .loginpw {
+        height: 62px;
+    border: 1px solid #972229;
+    background: url(../images/loginbarbg.jpg) -200px 0 no-repeat;
+    width: 390px;
+    padding: 0 5px;
+    color: #ffffff;
+    /* margin-left: 5px; */
+    font-size: 18pt;
+    background-color: #f10000;
+    top: 16px;
+    position: relative;
+}
+ .loginpw::-webkit-input-placeholder {
+     color: #ffffff;
+}
+ .loginpw:-ms-input-placeholder {
+     color: #ffffff;
+}
+ .loginpw::-ms-input-placeholder {
+     color: #ffffff;
+}
+ .loginpw::placeholder {
+     color: #ffffff;
+}
+
+
+
+
+ .loginbtn {
+      width: 390px;
+    height: 62;
+    /* text-indent: -9999px; */
+    background: url(../images/loginbtn.jpg) 0 0 no-repeat;
+    float: right;
+     border: 1px solid #972229;
+    background-color: #ffdc00;
+    color: #9b161d!important;
+    /* border-radius: 5px; */
+    font-size: 18pt;
+    /* -webkit-box-shadow: 2px 2px 0px #883409; */
+    /* box-shadow: 2px 2px 0px #883409; */
+    top: 54px;
+    position: relative;
+    cursor: pointer;
+}
+
+.loginbtn:hover{
+     border: 1px solid #972229;
+     background-color: #9b161d;
+    color: #ffdc00!important;
+}
+
+
+#login .reg{
+          position: absolute;
+    text-align: center;
+    width: 390px;
+    top: 260px;
+}
+ #Login .reg a {
+     color: #9b161d;
+     font-size: 18pt;
+     cursor: pointer;
+     font-weight: bold;
+     /*float: left;*/
+}
+
+#login .pas a:hover{
+    background-color: #9b161d;
+}
+
+ #Login .pas a {
+        color: #ffffff;
+    float: right;
+    margin-left: 5px;
+    position: relative;
+    top: -108px;
+    border: 1px solid #972229;
+    padding: 0 0px;
+    width: 74px;
+    height: 62px;
+    padding: 9px 14px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #c92f37;
+}
+
+
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -1355,4 +1606,103 @@ background-position: center;
 	100%{
 		opacity: 1;
 	}
+}
+
+.skyCloud{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/cloud-bg.png);
+    width: 184px;
+    height: 98px;
+    position: absolute;
+    left: -300px;
+
+}
+
+.cS1{
+    top: 0px;
+    animation: floatRight infinite linear 15s;
+}
+
+.cS2{
+    top: 100px;
+    animation: floatRight infinite linear 15s;
+    animation-delay: 8s;
+}
+
+.cS3{
+    top: 250px;
+    animation: floatRight infinite linear 15s;
+    animation-delay: 13s;
+}
+
+.cS4{
+    top: 300px;
+    animation: floatRight infinite linear 15s;
+    animation-delay: 3s;
+}
+
+
+#mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    overflow: hidden;
+}
+
+
+@keyframes floatRight{
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+
+.spotlight {
+  animation:top-right 5s ease-in-out alternate infinite;
+  border-bottom:none;
+  border-left:solid 250px transparent;
+  border-right:solid 250px transparent;
+  border-bottom:solid 1598px rgba(255, 255, 255, .5);
+  top:-400px;
+  height:0;
+  left:500px;
+  position:absolute;
+  transform-origin:top;
+  width:0;
+  opacity: 0.3;
+}
+
+.spotlight + .spotlight {
+  animation:top-left 4s ease-in-out alternate infinite;
+  left:auto;
+  right:500px;
+   opacity: 0.3;
+}
+
+@keyframes top-right {
+  0% {
+    transform:rotate(-10deg);
+  }
+  100% {
+    transform:rotate(30deg);
+  }
+}
+
+@keyframes top-left {
+  0% {
+    transform:rotate(10deg);
+  }
+  100% {
+    transform:rotate(-30deg);
+  }
 }
