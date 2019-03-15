@@ -22,6 +22,12 @@ jQuery(function($) {
 
     });
 
+    $(".soundContainer").on('mouseenter', function(event) {
+        $(".soundPop").stop().fadeIn();
+    }).on('mouseleave', function(event) {
+        $(".soundPop").stop().fadeOut();
+    });
+
 
     // BGM
     $('<embed id="bgm" src="audio/bgm.mp3"></embed>').prependTo('body');
@@ -30,16 +36,16 @@ jQuery(function($) {
         $('<embed id="bgm" src="audio/bgm.mp3"></embed>').prependTo('body');
     }, 43000);
 
-    $(".sound").on('click', function(event) {
+    $(".soundContainer").on('click', function(event) {
         $("embed#bgm").remove();
         clearInterval(bgm);
-        if ($(this).hasClass('soundOn')) {
-            $(this).addClass('soundOff');
-            $(this).removeClass('soundOn');
+        if ($(".soundContainer > .sound").hasClass('soundOn')) {
+            $(".soundContainer > .sound").addClass('soundOff');
+            $(".soundContainer > .sound").removeClass('soundOn');
             $("audio").get(0).pause();
         } else {
-            $(this).addClass('soundOn');
-            $(this).removeClass('soundOff');
+            $(".soundContainer > .sound").addClass('soundOn');
+            $(".soundContainer > .sound").removeClass('soundOff');
             $("audio").get(0).play();
         }
     });
@@ -53,7 +59,7 @@ jQuery(function($) {
         items: 5,
         direction: "left",
         scroll: {
-            items: 10,
+            items: 9,
             duration: 20000,
             timeoutDuration: 0,
             easing: 'linear'
@@ -64,7 +70,7 @@ jQuery(function($) {
         items: 5,
         direction: "right",
         scroll: {
-            items: 10,
+            items: 9,
             duration: 20000,
             timeoutDuration: 0,
             easing: 'linear'
@@ -86,58 +92,58 @@ jQuery(function($) {
     // check of loggedIn
     var loggedIn = 0;
     // on click log in
-    $("#login-submit").on('click',  function(event) {
-       loggedIn = 1;
-       $(".pop,.pop-login").fadeOut();
+    $("#login-submit").on('click', function(event) {
+        loggedIn = 1;
+        $(".pop,.pop-login").fadeOut();
     });
 
     // clicked play on 300
     $(".g-300").on('click', function(event) {
         // before playing check if logged in
+      
         if (loggedIn == 0) {
             $(".pop,.pop-login").fadeIn();
-        }
-        else{
+        } else {
+              $(".claw-content").removeClass('sway');
+            $(".fr1-p1,.fr1-p2,.fr1-p3,.fr1-p4").addClass('blur');
 
-        $(".fr1-p1,.fr1-p2,.fr1-p3,.fr1-p4").addClass('blur');
-       
-        $(".g-300,.gr-300").hide();
-        //stop existing carousel
-        $c.trigger("finish");
-        $d.trigger("finish");
-        // reinitialize to change speed
-        $c.carouFredSel({
-            items: 5,
-            direction: "left",
-            scroll: {
-                items: 10,
-                duration: 800,
-                timeoutDuration: 0,
-                easing: 'linear'
-            }
-        });
+            $(".g-300,.gr-300").hide();
+            //stop existing carousel
+            $c.trigger("finish");
+            $d.trigger("finish");
+            // reinitialize to change speed
+            $c.carouFredSel({
+                items: 5,
+                direction: "left",
+                scroll: {
+                    items: 9,
+                    duration: 800,
+                    timeoutDuration: 0,
+                    easing: 'linear'
+                }
+            });
 
-        $d.carouFredSel({
-            items: 5,
-            direction: "right",
-            scroll: {
-                items: 10,
-                duration: 800,
-                timeoutDuration: 0,
-                easing: 'linear'
-            }
-        });
- 
-        // animate claw
-        $(".claw-content").animate({
-            'top': '185px'
-        }, 800);
-        mySound = new Audio('audio/claw-sound.mp3');
-        mySound.play()
+            $d.carouFredSel({
+                items: 5,
+                direction: "right",
+                scroll: {
+                    items: 9,
+                    duration: 800,
+                    timeoutDuration: 0,
+                    easing: 'linear'
+                }
+            });
 
-        setTimeout(function() {
-            AnimateRotate(43, -43);
-        }, 100);
+            // animate claw
+            $(".claw-content").animate({
+                'top': '185px'
+            }, 800);
+            mySound = new Audio('audio/claw-sound.mp3');
+            mySound.play();
+
+            setTimeout(function() {
+                AnimateRotate(43, -43);
+            }, 100);
 
         }
 
@@ -147,11 +153,15 @@ jQuery(function($) {
 
 
     $(".pop-close, .pop-close2, .pop-close3").on('click', function(event) {
-        $(".pop,.pop-prize,.pop-rules,.pop-login").fadeOut();
+        $(".pop,.pop-prize,.pop-rules,.pop-login,.pop-activities").fadeOut();
     });
 
-    $(".btn1,.btn2").on('click', function(event) {
+    $(".btn2").on('click', function(event) {
         $(".pop,.pop-rules").fadeIn();
+    });
+
+    $(".btn1").on('click', function(event) {
+        $(".pop,.pop-activities").fadeIn();
     });
 
 });
@@ -166,7 +176,7 @@ function AnimateRotate(angle, angle2) {
 
     // opening animation of claws
     $({ deg: -8 }).animate({ deg: angle }, {
-        duration: 150,
+        duration: 300,
         step: function(now) {
 
             $elem.css({
@@ -176,7 +186,7 @@ function AnimateRotate(angle, angle2) {
     });
 
     $({ deg: 8 }).animate({ deg: angle2 }, {
-        duration: 150,
+        duration: 300,
         step: function(now) {
 
             $elem2.css({
@@ -208,7 +218,7 @@ function AnimateRotate(angle, angle2) {
 
                 $(".fr1-p1,.fr1-p2,.fr1-p3,.fr1-p4").removeClass('blur');
                 // animation random prize for claw
-                var prizeList = [18, 28, 38, 68, 88, 128, 188, 588, 1688, 'phone'];
+                var prizeList = [18, 28, 38, 68, 88, 128, 188, 588, 1688];
                 var rndNum = Math.floor(Math.random() * prizeList.length);
                 var prize = prizeList[rndNum];
                 console.log(prize);
@@ -277,13 +287,13 @@ function AnimateRotate(angle, angle2) {
                             showPopPrize("pop-p1", "prizeAmt2 pri-1688");
                         }, 1100);
                         break;
-                    case 'phone':
-                        $(".rndPrize").addClass('pri4-claw');
-                        $(".rndPrize > div").addClass('phonePrizeAmt2 pri-phone');
-                        setTimeout(function() {
-                            showPopPrize("pop-phone", "prizeAmt2 pri-phone");
-                        }, 1100);
-                        break;
+                    // case 'phone':
+                    //     $(".rndPrize").addClass('pri4-claw');
+                    //     $(".rndPrize > div").addClass('phonePrizeAmt2 pri-phone');
+                    //     setTimeout(function() {
+                    //         showPopPrize("pop-phone", "prizeAmt2 pri-phone");
+                    //     }, 1100);
+                    //     break;
                 }
 
                 $(".claw-content").animate({
@@ -394,3 +404,6 @@ function showPopPrize(icon, prize) {
     });
 
 }
+
+
+
