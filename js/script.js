@@ -97,8 +97,8 @@ jQuery(function($) {
         $(".pop,.pop-login").fadeOut();
     });
 
-    // clicked play on 300
-    $(".g-300").on('click', function(event) {
+    // clicked green to play
+    $(".green").on('click', function(event) {
         // before playing check if logged in
       
         if (loggedIn == 0) {
@@ -107,10 +107,20 @@ jQuery(function($) {
               $(".claw-content").removeClass('sway');
             $(".fr1-p1,.fr1-p2,.fr1-p3,.fr1-p4").addClass('blur');
 
-            $(".g-300,.gr-300").hide();
+            if ($(this).hasClass('g-300')) {
+                $(".g-300, .gr-300").hide();
+            }
+            else if($(this).hasClass('g-5000')) {
+                $(".g-5000, .gr-5000").hide();
+            }
+            else if($(this).hasClass('g-3000')) {
+                $(".g-3000, .gr-3000").hide();
+            }
+            
             //stop existing carousel
             $c.trigger("finish");
             $d.trigger("finish");
+
             // reinitialize to change speed
             $c.carouFredSel({
                 items: 5,
@@ -149,7 +159,72 @@ jQuery(function($) {
 
     });
 
+  
 
+    // after closing pop up prize to play remaining green buttons
+    $(".pop-prize > .pop-close").on('click',  function(event) {
+        // reset values for pop prize
+        $(".pop-icon").removeClass(popIcon);
+        $(".pop-value").removeClass(popVal);
+
+        // reset position and caught prize from claw
+        $(".pop-icon").css({'top':'200px'}).removeClass('wobble-hor-bottom');
+
+        // on drop dust cloud animation reset
+        $(".clouds > .cloud1").removeClass('clouds-left').hide();
+        $(".clouds > .cloud2").removeClass('clouds-right').hide();
+
+
+        //  background shine and stars reset
+        $(".star, .shine").fadeOut("fast");
+        $(".pop-value").removeClass('pop-value-scale');
+
+
+
+         $(".rndPrize").removeClass(imgPrize);
+         $(".prizeAmt").removeClass(amtPrize);
+        $(".rndPrize").css({'top':'0'});
+         $(".claw-content").addClass('sway');
+         $(".claw-left").css({
+            '-webkit-transform': 'rotate(-8deg)',
+            '-moz-transform': 'rotate(-8deg)',
+            '-ms-transform': 'rotate(-8deg)',
+             '-o-transform': 'rotate(-8deg)',
+                'transform': 'rotate(-8deg)'
+         });
+         $(".claw-right").css({
+            '-webkit-transform': 'rotate(8deg)',
+            '-moz-transform': 'rotate(8deg)',
+            '-ms-transform': 'rotate(8deg)',
+             '-o-transform': 'rotate(8deg)',
+                'transform': 'rotate(8deg)'
+         });
+         // stop existing carousel
+        $("#carousel").trigger('finish');
+        $("#carousel2").trigger('finish');
+        // reinitialize after every play
+         $("#carousel").carouFredSel({
+            items: 5,
+            direction: "left",
+            scroll: {
+                items: 9,
+                duration: 20000,
+                timeoutDuration: 0,
+                easing: 'linear'
+            }
+        });
+        // row 2
+        $("#carousel2").carouFredSel({
+            items: 5,
+            direction: "right",
+            scroll: {
+                items: 9,
+                duration: 20000,
+                timeoutDuration: 0,
+                easing: 'linear'
+            }
+        });
+    });
 
 
     $(".pop-close, .pop-close2, .pop-close3").on('click', function(event) {
@@ -166,7 +241,11 @@ jQuery(function($) {
 
 });
 
-
+  // variables - prize holder
+    var imgPrize = "";
+    var amtPrize = 0;
+    var popIcon = "";
+    var popVal = "";
 
 function AnimateRotate(angle, angle2) {
 
@@ -227,6 +306,8 @@ function AnimateRotate(angle, angle2) {
                     case 18:
                         $(".rndPrize").addClass('fr1-p3');
                         $(".rndPrize > div").addClass('prizeAmt pri-18');
+                        imgPrize = "fr1-p3";
+                        amtPrize = "pri-18";
                         setTimeout(function() {
                             showPopPrize("pop-p1", "prizeAmt2 pri-18");
                         }, 1100);
@@ -234,6 +315,8 @@ function AnimateRotate(angle, angle2) {
                     case 28:
                         $(".rndPrize").addClass('fr1-p1');
                         $(".rndPrize > div").addClass('prizeAmt pri-28');
+                        imgPrize = "fr1-p1";
+                        amtPrize = "pri-28";
                         setTimeout(function() {
                             showPopPrize("pop-p3", "prizeAmt2 pri-28");
                         }, 1100);
@@ -241,6 +324,8 @@ function AnimateRotate(angle, angle2) {
                     case 38:
                         $(".rndPrize").addClass('fr1-p2');
                         $(".rndPrize > div").addClass('prizeAmt pri-38');
+                        imgPrize = "fr1-p2";
+                        amtPrize = "pri-38";
                         setTimeout(function() {
                             showPopPrize("pop-p2", "prizeAmt2 pri-38");
                         }, 1100);
@@ -248,6 +333,8 @@ function AnimateRotate(angle, angle2) {
                     case 68:
                         $(".rndPrize").addClass('fr1-p1');
                         $(".rndPrize > div").addClass('prizeAmt pri-68');
+                        imgPrize = "fr1-p1";
+                        amtPrize = "pri-68";
                         setTimeout(function() {
                             showPopPrize("pop-p3", "prizeAmt2 pri-68");
                         }, 1100);
@@ -255,6 +342,8 @@ function AnimateRotate(angle, angle2) {
                     case 88:
                         $(".rndPrize").addClass('fr1-p2');
                         $(".rndPrize > div").addClass('prizeAmt pri-88');
+                        imgPrize = "fr1-p2";
+                        amtPrize = "pri-88";
                         setTimeout(function() {
                             showPopPrize("pop-p2", "prizeAmt2 pri-88");
                         }, 1100);
@@ -262,6 +351,8 @@ function AnimateRotate(angle, angle2) {
                     case 128:
                         $(".rndPrize").addClass('fr1-p3');
                         $(".rndPrize > div").addClass('prizeAmt pri-128');
+                         imgPrize = "fr1-p3";
+                        amtPrize = "pri-128";
                         setTimeout(function() {
                             showPopPrize("pop-p1", "prizeAmt2 pri-128");
                         }, 1100);
@@ -269,6 +360,8 @@ function AnimateRotate(angle, angle2) {
                     case 188:
                         $(".rndPrize").addClass('fr1-p2');
                         $(".rndPrize > div").addClass('prizeAmt pri-188');
+                         imgPrize = "fr1-p2";
+                        amtPrize = "pri-188";
                         setTimeout(function() {
                             showPopPrize("pop-p2", "prizeAmt2 pri-188");
                         }, 1100);
@@ -276,6 +369,8 @@ function AnimateRotate(angle, angle2) {
                     case 588:
                         $(".rndPrize").addClass('fr1-p1');
                         $(".rndPrize > div").addClass('prizeAmt pri-588');
+                         imgPrize = "fr1-p1";
+                        amtPrize = "pri-588";
                         setTimeout(function() {
                             showPopPrize("pop-p3", "prizeAmt2 pri-588");
                         }, 1100);
@@ -283,6 +378,8 @@ function AnimateRotate(angle, angle2) {
                     case 1688:
                         $(".rndPrize").addClass('fr1-p3');
                         $(".rndPrize > div").addClass('prizeAmt pri-1688');
+                         imgPrize = "fr1-p3";
+                        amtPrize = "pri-1688";
                         setTimeout(function() {
                             showPopPrize("pop-p1", "prizeAmt2 pri-1688");
                         }, 1100);
@@ -300,32 +397,34 @@ function AnimateRotate(angle, angle2) {
                     'top': '10px'
                 }, 1000);
 
-                if ($(".rndPrize").hasClass('pri4-claw')) {
+                // if ($(".rndPrize").hasClass('pri4-claw')) {
 
-                    // if ie animation on claw up
-                    if (navigator.appName == 'Microsoft Internet Explorer' || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) || (typeof $.browser !== "undefined" && $.browser.msie == 1)) {
-                        $(".rndPrize").animate({
-                            'top': '-157px'
-                        }, 1000);
-                    } else {
-                        $(".rndPrize").animate({
-                            'top': '-157px'
-                        }, 1000);
-                    }
+                //     // if ie animation on claw up
+                //     if (navigator.appName == 'Microsoft Internet Explorer' || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) || (typeof $.browser !== "undefined" && $.browser.msie == 1)) {
+                //         $(".rndPrize").animate({
+                //             'top': '-157px'
+                //         }, 1000);
+                //     } else {
+                //         $(".rndPrize").animate({
+                //             'top': '-157px'
+                //         }, 1000);
+                //     }
 
 
+                // } else 
+
+
+                // if ie animation on claw up
+                if (navigator.appName == 'Microsoft Internet Explorer' || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) || (typeof $.browser !== "undefined" && $.browser.msie == 1)) {
+                    $(".rndPrize").animate({
+                        'top': '-186px'
+                    }, 1000);
                 } else {
-                    // if ie animation on claw up
-                    if (navigator.appName == 'Microsoft Internet Explorer' || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) || (typeof $.browser !== "undefined" && $.browser.msie == 1)) {
-                        $(".rndPrize").animate({
-                            'top': '-186px'
-                        }, 1000);
-                    } else {
-                        $(".rndPrize").animate({
-                            'top': '-186px'
-                        }, 1000);
-                    }
+                    $(".rndPrize").animate({
+                        'top': '-186px'
+                    }, 1000);
                 }
+                
             }
         });
 
@@ -350,6 +449,9 @@ function showPopPrize(icon, prize) {
     $(".pop,.pop-prize").fadeIn();
     $(".pop-icon").addClass(icon);
     $(".pop-value").fadeIn().addClass(prize);
+
+    popIcon = icon;
+    popVal = prize;
 
     // claws
     var $clawLeft = $(".popclaw-left");

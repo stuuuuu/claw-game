@@ -1,0 +1,3129 @@
+
+/** 新版會員版面共通使用**/
+  .rightsec{
+    font-family: Microsoft JhengHei;
+    font-size: 13px;
+  }
+  .member-title{
+    width: 580px;
+    height: 40px;
+    background-size:580px 40px;
+    margin-top: 13px;
+  }
+
+  .member-table{
+
+    text-align: center;
+    border-bottom: 1px #434343 solid;
+    border-right: 1px #434343 solid;
+    width: 580px;
+    margin-bottom:18px;
+    table-layout:fixed;
+  }
+
+  .member-table td , .member-table th {
+    height: 33px;
+    border-top: 1px #434343 solid;
+    border-left: 1px #434343 solid;
+  }
+  #VIP_Guess .member-table td{
+    height: 27px;
+  }
+  #VIP_Guess .member-table td.css-question_name .css-question_name_span{
+    width: 225px;
+    line-height: 27px;
+    height: 27px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  #VIP_Guess .member-table td.css-question_name .css-question_arrow_btn{
+    background-image: url('../images/member/icon_arrow_right.png');
+    width: 13px;
+    height: 13px;
+    background-size: 13px 13px;
+    float: right;
+    margin: 7px 2px;
+  }
+  #VIP_Guess .member-table td.css-question_name .css-question_arrow_btn.css-topic_show{
+    background-image: url('../images/member/icon_arrow_down.png');
+  }
+  #VIP_Guess .css-mail_content{
+    background: #34250e;
+    text-align: left;
+    padding: 10px 20px;
+  }
+  #VIP_Guess .member-table td .css-mail_content{
+    padding: 14px 14px;
+  }
+  #VIP_Guess .css-mail_content span{
+    color: #e8cb95;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .member-table th{
+
+    background-color: #101010;
+    color: #cba460;
+  }
+  .member-table td{
+    background-color: #191919;
+
+  }
+  .member-table a:hover{
+    color:#c9b081;
+  }
+
+  .member-select ,.member-input {
+    background-color: #232323;
+    border: 1px solid #85693a;
+    height: 30px;
+    width: 185px;
+    color: #6b5c44;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  .member-input::-webkit-outer-spin-button,
+  .member-input::-webkit-inner-spin-button {
+      /* display: none; <- Crashes Chrome on hover */
+      -webkit-appearance: none;
+      margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
+
+  .web-theme-color{
+      color:#c9b081;
+  }
+
+  .hr_new{
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #222222;
+    width: 580px;
+    height: 0px;
+    margin-bottom: 20px;
+  }
+
+  .member-point-tab-button{
+    display: block;
+    float : right;
+  }
+
+
+  .membertable select, .membertable input, .membertable textarea{
+    background-color: #232323;
+    border: 1px solid #85693a;
+    color: #6b5c44;
+  }
+  .pagenav_new {
+    text-align: center;
+  }
+  .pagenav_new a{
+    color:#b4b4b4;
+    margin: 0px 10px;
+  }
+  .pagenav_new a:hover, .pagenav_new a.active{
+    color:#c29240;
+  }
+  .hide-detail{
+    display: none;
+  }
+  .css-default_submit_btn{
+    font-size: 14px;
+    font-family: "Microsoft JhengHei";
+    display: block;
+    background-color:#c29840;
+    color:#FFFFFF;
+    border-radius: 3px;
+    text-align: center;
+    border:0px #ff0000 solid;
+    cursor: pointer;
+  }
+  .css-default_submit_btn:hover{
+    background-color: #9b7431;
+  }
+
+  .css-default_submit_btn:disabled {
+    color:#757575;
+    background-color:#202020;
+    cursor: unset;
+  }
+
+  #mine_update_div .css-default_submit_btn:disabled {
+    color:#FFFFFF;
+    background-color:#c29840;
+    cursor: unset;
+  }
+
+  .css-default_cancel_btn{
+    font-size: 14px;
+    font-family: "Microsoft JhengHei";
+    display: block;
+    background-color:#434343;
+    color:#cacaca;
+    border-radius: 3px;
+    text-align: center;
+    border:0px #ff0000 solid
+  }
+  .css-default_cancel_btn:hover{
+    background-color: #202020;
+  }
+
+  .css-black_default_bg{
+    background-color: #0a0a0a;
+    padding-bottom: 1px;
+  }
+
+  .member-button-style1 {
+        background-color: #101010;
+        border: 1px solid #c29240;
+        color: #c29240;
+        height: 25px;
+        border-radius: 3px;
+        padding: 0 5px;
+        width: 121px;
+        cursor: pointer;
+  }
+  .member-button-style1:hover {
+      color: #c9b081;
+  }
+  .member-button-style1.disabled ,
+  .member-button-style1:disabled {
+      color: #868585;
+      border: 1px solid #535353;
+      background-color: #222222;
+  }
+
+  /** 新版會員版面共通使用 END **/
+
+
+.modal-head{
+ width:100%;height:38px;    line-height: 38px;
+}
+.modal-head div.modal-title{
+  font-size: 20px;
+  color:#977736;
+  float: left;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.modal-body{
+width:100%;height:240px;background-color:#F8F8F8;color:#9D9F98;
+}
+
+.modal-body table {
+  width:400px ;
+    font-size: 14px;
+}
+
+
+
+.modal-body table tr td input{
+  height: 28px;
+  border:#b5b5b5 1px solid;
+  text-align: center;
+}
+
+.modal-body table tr td input.validcode{
+    width: 60px;
+
+}
+.modal-body table tr td input#country_input{
+    width: 30px;
+
+}
+.modal-body table tr td input#vphone_input{
+    width: 90px;
+
+}
+
+.modal-body table tr td input#vemail_code{
+    width: 100px;
+
+}
+
+.modal-body table tr td.right{
+  float:right;
+
+}
+
+.modal-body table tr td a{
+   display:block;
+   background-color: #DCCCB3;
+   border:#BEA785 1px solid;
+   text-align: center;
+   color:#8C8087;
+   font-weight: 800;
+   height: 28px;
+  line-height: 28px;
+}
+
+
+.modal-body div.btn{
+  margin:0px auto;
+  width: 160px;
+  height: 40px;
+  background-color:  #967736 ;
+  color: #F9F3EE;
+  text-align:center ;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+
+.modal-content{
+  padding: 9px;
+}
+.modal-content p{
+
+}
+
+.valid_content{
+  width: 100%;
+}
+.valid_content .float{
+  float: left;
+}
+.valid_close_modal{
+  float: right;
+  margin-top: 8px;
+  cursor: pointer;
+
+}
+.valid_hint{
+  display: none;
+  padding-left: 10px;
+}
+#btn_valid_email{
+
+}
+
+.rakeback-status a{
+  color:#ae894a;
+}
+.rake-btn{
+ color:#ae894a !important;
+}
+.rake-btn:hover{
+ color:#fff !important;
+}
+
+
+.rake_hint{
+    width: 18px;
+    height: 23px;
+    display: inline;
+}
+
+
+.rakeinfo-container{
+  display: none;
+  margin-left:100px;
+    width: 300px;
+    color:#372500;
+    background-color: #9D7736;
+      border:1px #9D7736 solid;
+      position: relative;
+}
+
+.rakeinfo-title{
+ padding-left: 20px;
+ font-weight: bold;
+}
+
+.rakeinfo-close{
+  color:#fff;
+  position: absolute;
+  top :0px;
+  right :0px;
+  font-weight: bold;
+}
+.rakeinfo-time{
+  color:#FFF;
+ background-color: #4C3B1F;
+ margin: 0 auto;
+ text-align: center;
+}
+.rakeinfo-table{
+  background-color: #34250E;
+  width: 100%;
+  color:#ae894a;
+  border:1px #9D7736 solid;padding:5px;
+
+}
+.rakeinfo-table-row td{
+
+ text-align:center;
+ vertical-align:middle;
+
+}
+
+
+
+.login-modal-body{
+  height:100px;
+}
+
+
+.vip_table_a_link {
+font-weight: 700;
+margin-left: 20px;
+}
+
+
+
+.vip_table_a_link.current{
+color:#ae894a;
+}
+
+.vip_table_a_link:hover{
+color:#ae894a;
+}
+
+
+
+
+.cbc_btb{
+color:#d90000;
+}
+
+.cbc_btb:hover{
+color:#ae894a;
+text-decoration:underline;
+}
+
+#banktrans_hint{
+ float: right;
+}
+
+
+#banktrans_hint a{
+color:#AE894A;
+}
+
+#banktrans_hint a:hover{
+color:#d90000;
+text-decoration:underline;
+}
+
+.float_hint{
+   float: right;
+}
+.float_hint a{
+color:#AE894A;
+}
+
+.float_hint a:hover{
+color:#d90000;
+text-decoration:underline;
+}
+#cfApply_modal{
+
+ text-align: center;
+
+  background-color:#000000; width:300px; height:115px; display:none; padding:12px;
+  color:#969696;
+  font-family: "Microsoft YaHei";
+}
+
+#cfApply_modal #cfApply_body {
+  border: #9C7735 1px solid;
+    height: 100%;
+    width: 100%;
+    background-color: initial;
+    color: #9D9F98;
+    padding:20px;
+}
+
+#cfApply_body .shortbtn{
+  display: inline;
+}
+
+
+
+
+
+
+.treasureNumberInfo-container{
+  display: none;
+    margin-left: 120px;
+    width: 300px;
+    color: #C7A15D;
+    background-color: #272727;
+    border: 1px #9D7736 solid;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.treasureNumberInfo-title{
+ padding-left: 20px;
+ font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+}
+
+.treasureNumberInfo-close{
+    color: #C7A15D;
+    position: absolute;
+    top: 2px;
+    right: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.treasureNumberInfo-table{
+  background-color: #272727;
+  width: 100%;
+  color:#C7A15D;
+  border:1px #9D7736 solid;padding:5px;
+
+}
+
+
+
+
+.treasureNumberInfo-table-row  th{
+  background-color: #1D1D1D;
+ text-align:center;
+ vertical-align:middle;
+}
+
+.treasureNumberInfo-table-row  td{
+
+ text-align:center;
+ vertical-align:middle;
+
+}
+
+
+#cfOrderCancel_body{
+  /*  background: url(../images/cf_cancel_background.png);*/
+  padding: 15px;
+}
+
+#cfOrderCancel_modal{
+    width:365px;
+    height:180px;
+     display:none;
+    background: url(../images/cf_cancel_background.png);
+    border-radius: initial;
+    font-family:Microsoft YaHei,SimSun,sans-serif;
+}
+
+#cfOrderCancel_body .head-content{
+  width: 100%;
+   height: 27px;
+
+
+}
+
+#cfOrderCancel_body .head-content .head-content-title{
+    height: 100%;
+    float: left;
+    color: #957949;
+    font-size: 17px;
+    margin-top: -10px;
+}
+#cfOrderCancel_body .head-content .head-content-close{
+  /*height: 100%;*/
+  cursor: pointer;
+  float:right;
+}
+
+#cfOrderCancel_body .content{
+  color:#474747;
+  height:88px;
+}
+
+.cfOrderCancel-apply-btn{
+  display: block;
+  cursor: pointer;
+  float:right;
+  background-color: #BF9C64;
+  color :#F9FDFF;
+  border:#9B7B32 1px solid;
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 15px;
+}
+.cfOrderCancel-close-btn{
+  display: block;
+  cursor: pointer;
+  float:right;
+  background-color: #F1F1F1;
+  color:#626262;
+    border:#DCDCDC 1px solid;
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.treasure_div{
+  display: none;
+}
+
+
+
+
+/**  VIP 積分新版面 **/
+
+  .vip_point-title{
+    background-image: url('../images/member/title_E01.png');
+
+  }
+
+  .vip_point-member-level{
+    font-size: 14px;
+    margin: 12px 0px 12px 15px;
+  }
+  .vip_point-table{
+    width: 530px;
+    color:#adadad;
+    margin: 0 auto;
+  }
+
+  .vip_point-enter-button{
+    display: block;
+    margin:57px auto;
+    width: 156px;
+    height:34px;
+    line-height: 34px;
+    background-color:#c29840;
+    color:#FFFFFF;
+    border-radius: 3px;
+    text-align: center;
+
+  }
+
+  .vip_point-enter-button:hover{
+      background-color: #9b7431;
+
+  }
+
+  .vip_point-tab-button-viphomepage{
+    width: 88px;
+    height: 40px;
+    background-image: url('../images/member/btn_E01.png');
+    background-size:88px 80px;
+
+  }
+  .vip_point-tab-button-viphomepage:hover{
+    background-position:0px 40px;
+  }
+
+/**vip_table**/
+
+.vip_table-title-record{
+  background-image: url('../images/member/title_E02.png');
+}
+
+.vip_table-title-record2{
+  background-image: url('../images/member/title_E03.png');
+}
+.vip_table-title-record-treasure{
+  background-image: url('../images/member/title_E04.png');
+}
+
+
+.vip_table-tab-button-record{
+  width: 105px;
+  height: 40px;
+  background-image: url('../images/member/btn_E02.png');
+  background-size:105px 80px;
+}
+.vip_table-tab-button-record:hover{
+  background-position:0px 40px;
+}
+
+.vip_table-tab-button-record2{
+  width: 105px;
+  height: 40px;
+  background-image: url('../images/member/btn_E03.png');
+  background-size:105px 80px;
+}
+.vip_table-tab-button-record2:hover{
+  background-position:0px 40px;
+}
+
+.vip_table-tab-button-record-treasure{
+  width: 105px;
+  height: 40px;
+  background-image: url('../images/member/btn_E04.png');
+  background-size:105px 80px;
+}
+.vip_table-tab-button-record-treasure:hover{
+  background-position:0px 40px;
+}
+
+
+
+/**vip_table end**/
+
+/**vip_treasure**/
+
+.treasure-title-now{
+  background-image: url('../images/member/title_E05.png');
+}
+
+.treasure-title-history{
+  background-image: url('../images/member/title_E06.png');
+}
+
+
+
+.treasure-tab-button-now{
+  width: 93px;
+  height: 40px;
+  background-image: url('../images/member/btn_E06.png');
+  background-size:93px 80px;
+}
+.treasure-tab-button-now:hover{
+  background-position:0px 40px;
+}
+
+.treasure-tab-button-history{
+  width: 93px;
+  height: 40px;
+  background-image: url('../images/member/btn_E05.png');
+  background-size:93px 80px;
+}
+.treasure-tab-button-history:hover{
+  background-position:0px 40px;
+}
+/**vip_treasure end**/
+
+/**guess**/
+.guess-title{
+  background-image: url('../images/member/title_E07.png');
+}
+/**guess end**/
+
+
+
+.vip_date_scroll_tab{
+  width: 150px;
+  margin: 0 auto;
+}
+.vip_date_scroll_tab li a{
+  font-size: 15px;
+  color:#c9b081;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+/*- 20180821我的账户的积分页面 -*/
+
+.css-member_title{
+    background-color: #1c1c1c;
+    border-bottom: 1px solid #d39336;
+    width: 580px;
+    height: 40px;
+    background-size: 580px 40px;
+    margin-top: 13px;
+}
+
+.css-member_title .css-member_span{
+    color: #e6b651;
+    font-size: 15px;
+    padding-top: 4px;
+    padding-left: 12px;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 32px;
+}
+.css-member_title .css-member_tab{
+    display: inline-block;
+    margin-top: 9px;
+    height: 23px;
+    color: #dab576;
+    padding-left: 12px;
+    line-height: 22px;
+    float: right;
+    padding: 0 12px;
+}
+
+.css-member_title .css-member_tab:hover{
+    color: #e8d5b2
+}
+
+.css-member_title .css-member_auto{
+    width: auto;
+}
+
+.css-member_title .css-mtab_active{
+    color: #969696 !important
+}
+
+.css-member_title .css-member_div2{
+    float: right;
+    border-right: 1px solid #dab576;;
+    height: 23px;
+    display: inline-block;
+    margin-top: 8px;
+    padding-top: 0px;
+}
+/*- 新的我的账户的积分页面 -*/
+
+/*******************SCROLL TAB BASIC STYLING **********************/
+.scroll_tabs_container {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: left;
+    height: 20px;
+    margin-bottom: 18px;
+    margin-top: 18px;
+}
+
+ul.scroll_tabs_container {
+    list-style: none;
+}
+
+.scroll_tabs_container div.scroll_tab_inner {
+    height: 20px;
+}
+
+.scroll_tabs_container div.scroll_tab_inner span, .scroll_tabs_container div.scroll_tab_inner li {
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    width: 130px;
+}
+
+.scroll_tabs_container div.scroll_tab_inner li {
+    display: -moz-inline-stack;
+    display: inline-block;
+    *display: inline;
+    list-style-type: none;
+}
+
+.scroll_tabs_container div.scroll_tab_inner span.scroll_tab_left_finisher {
+    padding: 0px;
+    width: 0px;
+}
+
+.scroll_tabs_container div.scroll_tab_inner span.scroll_tab_right_finisher {
+    padding: 0px;
+    width: 0px;
+}
+
+.scroll_tabs_container .scroll_tab_left_button {
+    height: 10px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: url(../images/member/btn_previous.png);
+    background-size: 10px 20px;
+    /*background-repeat: no-repeat;*/
+    background-position: 0 -10px;
+    margin-top: 5px;
+}
+.scroll_tabs_container .scroll_tab_left_button:hover{
+      background-position: 0 0;
+}
+.scroll_tabs_container .scroll_tab_left_button::before {
+    /*content: "\25C0";*/
+    line-height: 20px;
+}
+
+.scroll_tabs_container .scroll_tab_left_button_over {
+    /*background-color: #999999;*/
+}
+
+.scroll_tabs_container .scroll_tab_left_button_disabled {
+    /*color: #AAAAAA;
+    background-color: #CCCCCC;*/
+}
+
+.scroll_tabs_container .scroll_tab_right_button {
+    height: 10px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: url('../images/member/btn_next.png');
+    background-size: 10px 20px;
+
+    background-position: 0 -10px;
+    margin-top: 5px;
+}
+.scroll_tabs_container .scroll_tab_right_button:hover{
+      background-position: 0 0;
+}
+
+.scroll_tabs_container .scroll_tab_right_button::before {
+    /*content: "\25B6";*/
+    line-height: 20px;
+}
+
+.scroll_tabs_container .scroll_tab_right_button_over {
+    /*background-color: #999999;*/
+}
+
+.scroll_tabs_container .scroll_tab_right_button_disabled{
+   /* color: #AAAAAA;
+    background-color: #CCCCCC;*/
+}
+/*******************SCROLL TAB BASIC STYLING END **********************/
+
+  /**  VIP 積分新版面 END**/
+
+
+  /**  新訊息  **/
+ #messege .css-messege_title_img{
+    background-image: url('../images/member/title_I01.png');
+    width: 580px;
+    height: 40px;
+    background-size: 580px 40px;
+    margin-top: 13px;
+ }
+ #messege .css-title{
+    color: #c9b081;
+    font-size: 14px;
+    padding: 18px 0px 18px 0px;
+    padding-left: 24px;
+    float: left;
+    line-height: 14px;
+ }
+ #messege .css-mail_have_read{
+    text-align: right;
+    color: #adadad;
+    font-size: 13px;
+    padding: 27px 0px 0px 0px;
+    float: right;
+    line-height: 13px;
+ }
+ #messege .rightmod{
+    width: 580px;
+ }
+ #messege .messegetable th,#messege .messegetable td{
+    height: 26px;
+    line-height: 26px;
+ }
+ #messege .css-topic_arrow_btn{
+    background-image: url('../images/member/icon_arrow_right.png');
+    width: 13px;
+    height: 13px;
+    background-size: 13px 13px;
+    float: right;
+    margin: 7px 12px;
+ }
+ #messege .css-topic_arrow_btn.css-topic_show{
+    background-image: url('../images/member/icon_arrow_down.png');
+ }
+ #messege .css-mail_content{
+    background: #34250e;
+ }
+ #messege .messegetable td .css-mail_content{
+    padding: 14px 14px;
+ }
+ #messege .css-mail_content span{
+    color: #e8cb95;
+    font-size: 13px;
+    line-height: 20px;
+ }
+ #messege .css-no_read_message{
+    color: #c9b081;
+    font-size: 13px;
+ }
+ #messege .css-have_read_message{
+    color: #adadad;
+    font-size: 13px;
+ }
+
+ #messege div.css-have_read_message{
+    float: left;
+    background: url('../images/member/icon_read_message.png') no-repeat;
+    height: 15px;
+    background-size: 15px 15px;
+    margin-left: 20px;
+    display: block;
+    line-height: 15px;
+    height: 15px;
+ }
+ #messege div.css-no_read_message{
+    float: left;
+    margin-top: 6px;
+    background: url(../images/member/icon_message.png) no-repeat;
+    height: 15px;
+    background-size: 15px 15px;
+    margin-left: 26.5px;
+    display: block;
+    line-height: 15px;
+    height: 15px;
+ }
+ #messege .pagenav{
+    text-align: center;
+ }
+ #messege .css-page.css-active{
+    color:#c29240
+ }
+ #messege .nortable input{
+    width: 580px;
+    height: 34px;
+    margin:0px;
+    padding:5px;
+    color: #d5b27a;
+ }
+ #messege .nortable textarea{
+    width: 580px;
+    height: 240px;
+    margin:0px;
+    padding:5px;
+    color: #d5b27a;
+ }
+ #messegestep3 .nortable{
+    margin:0px;
+ }
+ #messege .messegetable .css-title_messegetable th{
+    color: #cba460;
+    background: #101010;
+ }
+
+ #messege .css-messege_upload_img_icon{
+    width: 40px;
+    height: 31px;
+    background: url(../images/member/upload_img_icon.jpg);
+    background-position-y: 31px;
+    cursor: pointer;
+ }
+ #messege .css-messege_upload-txt{
+    left: 45px;
+ }
+ #messege .css-messege_upload_img_icon:hover{
+     background-position-y: 0px;
+ }
+  /**  新訊息END **/
+
+  /**  我的帐户 **/
+  #mine .css-mine_title{
+      width: 580px;
+      height: 40px;
+      margin-bottom:23px;
+  }
+  #mine .css-mine_title.css-title_edit_personal{
+      background: url(../images/member/title_edit_personal.png) no-repeat;
+      background-size: 580px 40px;
+  }
+  #mine .css-mine_title.css-title_modifyphone{
+      background: url(../images/member/title_modifyphone.png) no-repeat;
+      background-size: 580px 40px;
+  }
+  #mine .css-mine_title.css-title_personal{
+      background: url(../images/member/title_personal.png) no-repeat;
+      background-size: 580px 40px;
+  }
+  #mine .css-mine_title.css-title_adress{
+      background: url(../images/member/title_adress_n.png?v=1) no-repeat;
+      background-size: 580px 40px;
+  }
+  #mine .css-mine_title.css-title_password{
+      background: url(../images/member/title_password.png) no-repeat;
+      background-size: 580px 40px;
+  }
+  #mine .css-mine_title.css-title_password{
+      background: url(../images/member/title_password.png) no-repeat;
+      background-size: 580px 40px;
+  }
+  #mine .css-mine_title.css-title_moneypassword{
+      background: url(../images/member/title_moneypassword.png) no-repeat;
+      background-size: 580px 40px;
+  }
+  #mine .css-mine_title.css-title_prohibit{
+      background: url(../images/member/title_prohibit.png) no-repeat;
+      background-size: 580px 40px;
+  }
+  #mine .css-mine_title.css-title_bank{
+      background: url(../images/member/title_bank_n.png?v=1) no-repeat;
+      background-size: 580px 40px;
+  }
+  #mine .nortable th,#mine .nortable td{
+      color: #9e9e9e;
+      font-size: 13px;
+  }
+  #mine .css-address_info{
+      padding-bottom: 15px;
+  }
+  #mine .css-minestep_table th,#mine .css-minestep_table td{
+      line-height: 13px;
+      padding-bottom: 25px;
+      text-align: left;
+      padding-left: 21px;
+      min-width: 50px;
+  }
+  #mine .css-mine_info.css-minestep_table th,#mine .css-mine_info.css-minestep_table td{
+      min-width: 231px;
+  }
+  #mine .css-minestep_table input{
+      width: 232px;
+      height: 34px;
+  }
+  #minestep1 .css-valid_btn{
+      color:#c79f56;
+      font-size: 12px;
+      margin-right: 12px;
+      height: 24px;
+      line-height: 24px;
+      float: left;
+  }
+  #minestep1 .css-valid_btn img{
+      height: 24px;
+      width: 24px;
+      vertical-align: top;
+  }
+  #mine .css-default_submit_btn,  #mine .css-default_cancel_btn{
+      float: left;
+      width: 136px;
+      height: 34px;
+  }
+  #mine .dist_select{
+      height: 22px;
+  }
+
+  #mine .membertable select,#mine .membertable input,#mine .membertable textarea{
+      font-size: 14px;
+      background-color: #232323;
+      border: 1px solid rgba(164,163,162,0.33);
+      padding-left: 5px;
+      color: #c79f56;
+      border-radius: 3px;
+  }
+
+  #mine .membertable select.error,#mine .membertable input.error,#mine .membertable textarea.error{
+      border: 1px solid rgba(245,10,10,0.61);
+  }
+
+  #mine .membertable select.success,#mine .membertable input.success,#mine .membertable textarea.success{
+      border: 1px solid #68532e;
+  }
+
+  #mine .rightsec{
+      width: 580px;
+      margin: 0 auto;
+      margin-top: 13px;
+  }
+
+  #mine .css-mine_title.css-title_bank button,
+  #mine .css-mine_title.css-title_adress button,
+  #mine .css-go_tmine_update_div_btn{
+    background: url(../images/member/bnt_edit.png);
+    width: 93px;
+    height: 40px;
+    background-size: 93px 120px;
+    float: right;
+    cursor: pointer;
+    border: 0px;
+    background-position-y: 0px;
+  }
+
+  #mine .css-mine_title.css-title_bank button:hover,
+  #mine .css-mine_title.css-title_adress button:hover,
+  #mine .css-go_tmine_update_div_btn:hover{
+      background-image: url(../images/member/bnt_edit.png);
+      background-size: 93px 120px;
+      background-position-y: -40px;
+  }
+  #mine .css-mine_title.css-title_bank button:disabled,
+  #mine .css-mine_title.css-title_adress button:disabled{
+      background-image: url(../images/member/bnt_edit.png);
+      background-size: 93px 120px;
+      background-position-y: -80px;
+  }
+  #mine .css-mine_hr{
+    size: 20px;
+    width: 1px;
+    float: right;
+    height: 20px;
+    background: #bb9b64;
+    border: 0px solid;
+    margin-top: 10px;
+  }
+
+  #mine .mine-title_modify_phone{
+    background-color: #0a0a0a;
+  }
+
+  #validphone_modal,#validemail_modal,#modifyphone_modal{
+      background-color:#FFFFFF; width:350px; height:300px; display:none; padding:0px;
+      border-radius: initial;
+      font-family: "Microsoft YaHei";
+      border-radius: 3px;
+      border: #b68b3a 1px solid;
+
+  }
+  #validemail_modal{
+      height:280px;
+  }
+
+  #validphone_modal .modal-body table,#validemail_modal .modal-body table,
+  #modifyphone_modal .modal-body table {
+      width:350px ;
+      font-size: 13px;
+  }
+  #validphone_modal .valid_close_modal ,#validemail_modal .valid_close_modal,
+  #modifyphone_modal .valid_close_modal {
+      background: url(../images/member/btn_esc_n.png) no-repeat;
+      background-size: 55px 33px;
+      width: 55px;
+      height: 33px;
+      float: right;
+      margin: 2.5px;
+      cursor: pointer;
+      margin-right: 5px;
+  }
+
+  #validphone_modal .modal-head ,#validemail_modal .modal-head,
+  #modifyphone_modal .modal-head{
+      background: -webkit-linear-gradient(#ca9946,#a17427);
+      background: -o-linear-gradient(#ca9946,#a17427);
+      background: -moz-linear-gradient(#ca9946,#a17427);
+      background: linear-gradient(#ca9946,#a17427);
+  }
+  #validphone_modal .modal-body,#validphone_modal,#validemail_modal .modal-body,#validemail_modal,
+  #modifyphone_modal .modal-body,#modifyphone_modal{
+      background-color:#111111;
+  }
+  #validphone_modal .valid_close_modal:hover,#validemail_modal .valid_close_modal:hover,
+  #modifyphone_modal .valid_close_modal:hover{
+      background: url(../images/member/btn_esc_h.png) no-repeat;
+      background-size: 55px 33px;
+  }
+  #validphone_modal .modal-title,#validemail_modal .modal-title,
+  #modifyphone_modal .modal-title{
+      width: 100px;
+      height: 25px;
+      margin: 0px auto;
+      float: none;
+      padding: 7px;
+  }
+  #validphone_modal .modal-title{
+      background: url(../images/member/titleB03_cellphone.png) no-repeat 0px;
+      background-size: 100px 25px;
+  }
+  #modifyphone_modal .modal-title{
+      background: url(../images/member/titleB04_edit.png) no-repeat 0px;
+      background-size: 100px 25px;
+  }
+  #validemail_modal .modal-title{
+      background: url(../images/member/titleB05_email.png) no-repeat 0px;
+      background-size: 100px 25px;
+  }
+  #validphone_modal .modal-body table tr td a,#validemail_modal .modal-body table tr td a,
+  #modifyphone_modal .modal-body table tr td a{
+      display: block;
+      background-color: #c29240;
+      border: #c29240 0px solid;
+      border-radius: 3px;
+      text-align: center;
+      color: #ffffff;
+      font-weight: 100;
+      font-size: 13px;
+      height: 30px;
+      line-height: 30px;
+      width: 90px;
+      float: right;
+  }
+  #validphone_modal .modal-body table tr td input.validcode,#validemail_modal .modal-body table tr td input.validcode,
+  #modifyphone_modal .modal-body table tr td input{
+      background-color: #222222;
+      border-radius: 3px;
+      border: #535353 1px solid;
+      width: 234px;
+      height: 38px;
+      color: #b69754;
+      text-align: left;
+      padding-left: 3px;
+      float: right;
+  }
+  #validemail_modal .css-valid_email{
+      color:#c9b081;
+      padding-left: 10px;
+      height: 13px;
+      line-height: 13px;
+  }
+  #validphone_modal .css-default_submit_btn,#validemail_modal .css-default_submit_btn,
+  #modifyphone_modal .css-default_submit_btn{
+      margin: 14px 25px;
+      height: 36px;
+      font-size: 15px;
+      line-height: 36px;
+  }
+  #modifyphone_modal .css-modifyphone_modal_div{
+      width:300px;
+      border: 1px solid #313131;
+      background: #1b1b1b;
+      line-height: 40px;
+      height: 40px;
+      padding-left: 8px;
+      box-sizing: border-box;
+      border-radius: 3px;
+      margin : 0px auto;
+  }
+  #modifyphone_modal .css-modifyphone_modal_div input[name='mc_PCODE']{
+      width:1.5em;
+      margin-left:0px;
+      font-size: 17px;
+      color: #b69754;
+      border: 0;
+      background: none;
+      float: left;
+      height: 38px;
+  }
+  #modifyphone_modal .css-modifyphone_modal_div hr{
+      margin:0 5px;
+      width: 1px;
+      height: 38px;
+      border: 0;
+      background: #313131;
+      display: inline-block;
+      vertical-align: top;
+      float: left;
+  }
+  #modifyphone_modal .css-modifyphone_modal_div input[name='mc_PHONE']{
+      width: 300px;
+      font-size: 13px;
+      color: #ac8a4d;
+      border: 0;
+      background: none;
+      width: 80%;
+      float: left;
+      height: 38px;
+  }
+  #validphone_modal .hr3,#validemail_modal .hr3, #modifyphone_modal .hr3{
+      width: 322px;
+      margin: 0px auto;
+  }
+  #modifyphone_modal {
+      font-family: Microsoft JhengHei;
+      font-size: 13px;
+  }
+  #modifyphone_modal .hr3{
+      margin-top: 17px;
+  }
+  #modifyphone_modal .css-valid_default_div p{
+      line-height: 15px;
+  }
+  #modifyphone_modal input::-webkit-input-placeholder,#mine_update_div input::-webkit-input-placeholder {
+      color: rgba(164,163,162,0.33);
+  }
+  #modifyphone_modal input:-moz-placeholder,#mine_update_div input:-moz-placeholder {
+      color: rgba(164,163,162,0.33);
+  }
+  #modifyphone_modal input::-moz-placeholder,#mine_update_div input::-moz-placeholder {
+      color: rgba(164,163,162,0.33);
+  }
+  #modifyphone_modal  input:-ms-input-placeholder,#mine_update_div  input:-ms-input-placeholder {
+      color: rgba(164,163,162,0.33);
+  }
+  #modifyphone_modal{
+      height: 225px
+  }
+  #modifyphone_modal .modal-body{
+      height: 120px
+  }
+  #validphone_modal .css-valid_default_div,#validemail_modal .css-valid_default_div,
+  #modifyphone_modal .css-valid_default_div{
+      width: 300px;
+      margin: 0px auto;
+  }
+  #minestep2 .css-minestep_table th, #minestep2 .css-minestep_table td,
+  #minestep3 .css-minestep_table th, #minestep3 .css-minestep_table td{
+      padding-bottom: 10px;
+  }
+  #minestep2 .css-resync_pwd_title{
+      color: #c79f56;
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 22px;
+      text-align: center;
+      font-family: "Microsoft JhengHei Regular";
+  }
+  #minestep2 .css-resync_pwd_content{
+      color: #c9b081;
+      font-size: 14px;
+      line-height: 25px;
+      height: 25px;
+      text-align: center;
+  }
+  #minestep2 .css-resync_pwd_table{
+      width: 450px;
+      border-collapse: collapse;
+      margin-top:5px;
+      border-color: #313131;
+      border-width: 1px;
+      border-style: solid;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  #minestep2 .css-resync_pwd_table th{
+      background: #626262;
+      color: #101010;
+      font-size: 16px;
+  }
+  #minestep2 .css-resync_pwd_table,#minestep2 .css-resync_pwd_table th,#minestep2 .css-resync_pwd_table td{
+      border-color: #313131;
+  }
+  #minestep4 .css-selflimit_div{
+      line-height: 25px;
+      color: #c9b081;
+      font-size: 14px;
+  }
+  #mine .css-minestep_table_mod th{
+      font-weight: normal;
+      padding-bottom: 10px;
+      font-size: 14px;
+  }
+  #mine .css-minestep_table_mod td{
+      padding-bottom: 10px;
+      padding-left: 10px;
+      font-size: 14px;
+  }
+  #mine #mine_update_phone_div input::-webkit-input-placeholder {
+      color: rgba(128,127,127,0.53);
+      font-size: 14px;
+  }
+  #mine #mine_update_phone_div input:-moz-placeholder {
+      color: rgba(128,127,127,0.53);
+      font-size: 14px;
+  }
+  #mine #mine_update_phone_div input::-moz-placeholder {
+      color: rgba(128,127,127,0.53);
+      font-size: 14px;
+  }
+  #mine #mine_update_phone_div input:-ms-input-placeholder {
+      color: rgba(128,127,127,0.53);
+      font-size: 14px;
+  }
+
+  #mine_update_phone_div .css-input_error_msg{
+      color: rgba(245,10,10,1);
+  }
+
+  #mine .css-UpdatePhone_step1_action{
+    margin: 0 auto;
+    list-style: none;
+    box-sizing: border-box;
+    height: 35px;
+    width: 100%;
+    padding: 0px;
+  }
+  #mine .css-UpdatePhone_step1_action li{
+    float: left;
+    width: 50%;
+    cursor: pointer;
+    text-align: center;
+    height: 32px;
+    box-sizing: border-box;
+    padding: 0px;
+    padding-top: 2px;
+    border-bottom: 2px solid #707070;
+    color: #707070;
+    font-size: 18px;
+  }
+  #mine .css-UpdatePhone_step1_action li.curret{
+    border-bottom: 2px solid #a07a39;
+    color: #a07a39;
+  }
+  /**  我的帐户END **/
+
+
+/**我的錢包 START**/
+
+  .bank-balance-title{
+    background-image: url('../images/member/title_F01.png');
+    margin-bottom: 12px;
+  }
+  .bank-balance-hint {
+      line-height: 25px;
+  }
+ .bank-balance-button {
+    float: right;
+ }
+ .bank-daily {
+     height: 225px;
+ }
+  .bank-daily-frame{
+    height: 146px;
+    background-image: url('../images/member/img_frame.png');
+    background-size: 146px 146px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+  }
+ .bank-daily-img{
+   width: 124px;
+   height: 124px;
+    display: inline-block;
+    margin: 11px 11px 18px;
+    /* border: 1px solid #343434; */
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+ }
+ .bank-daily-span{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #c29440;
+    line-height: 26px
+ }
+ .bank-daily-gamename{
+    font-size: 17px;
+    color: #c9b081;
+ }
+.bank-balance-header{
+    width: 580px;
+    color: #c9b081;
+    margin-bottom: 12px;
+}
+.bank-balance-notifyicon{
+  width:18px;
+  height:18px;
+   background-image: url('../images/member/icon_erro.png');
+  background-size: 18px 18px;
+}
+
+.bank-balance-content{
+  width: 580px;
+  margin-bottom: 15px;
+}
+.bank-balance-update-time {
+    width: 580px;
+    text-align: right;
+    color: #c9b081;
+    line-height: 1;
+    margin-bottom: 28px;
+}
+.bank-balance-hr {
+    border: 0;
+    border-top: 2px solid #090909;
+    border-bottom: 2px solid #1c1c1c;
+    width: 560px;
+    margin: 0 auto 44px;
+}
+.bank-balance-box{
+  width: 114px;
+  height: 60px;
+  border: 1px solid #434343;
+  background-color: #191919;
+  float:left;
+  margin-bottom: 22px;
+}
+.bank-balance-box-title{
+  width: 100%;
+  height: 50%;
+  border-bottom: 1px solid #434343;
+  background-color: #0b0b0b;
+  color: #c79f56;
+  text-align: center;
+  float:left;
+}
+.bank-balance-box-content{
+  text-align: center;
+}
+.bank-daily-modal-close{
+    position: absolute;
+    right: 11px;
+    top: 9px;
+    background: url('../images/member/btn_esc.png') no-repeat;
+    height: 40px;
+    width: 65px;
+    cursor: pointer;
+    background-size: 65px 80px;
+}
+.bank-daily-modal-close:hover{
+    background-position-y:-40px;
+}
+.bank-daily-modal-rules{
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    height: 35px;
+    width: 125px;
+    cursor: pointer;
+}
+.bank-daily-modal-content{
+    position: relative;
+    border: 10px solid #C29240;
+    width: auto;
+    height: auto;
+}
+.wallet-table {
+    border-right: 1px #535353 solid;
+    border-bottom: 1px #535353 solid;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.wallet-table th{
+    color: #c79f56;
+    background-color: #0b0b0b;
+    border-top: 1px #535353 solid;
+    border-left: 1px #535353 solid;
+    height: 30px;
+    font-weight: normal;
+}
+.wallet-table td{
+    color: #969695;
+    border-top: 1px #535353 solid;
+    border-left: 1px #535353 solid;
+    height: 38px;
+}
+/**END**/
+
+
+/** 轉帳記錄 **/
+
+#historystep .css-messege_title_img{
+    background-image: url('../images/member/title_G01-SN3.png');
+    background-size: 580px 40px;
+    width: 580px;
+    height: 40px;
+    margin-top: 13px;
+}
+
+#game_historystep li{
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    height: 32px;
+    box-sizing: border-box;
+    padding: 0px;
+    padding-top: 2px;
+    list-style-type: none;
+    margin-left: 38px;
+    /*border-bottom: 1px solid #5c5b5b;*/
+}
+#game_historystep .css-member_history_title_img{
+    background-image: url('../images/member/title_G01-SN3.png?v=3');
+    background-size: 580px 40px;
+    width: 580px;
+    height: 40px;
+    margin-top: 13px;
+}
+#game_historystep .css-game_history_btn.curret, #game_historystep .css-game_history_btn:hover {
+    border-bottom: 2px solid #c29240;
+    color: #c29240;
+}
+.css-game_history_search_div span{
+    color: #C79F56;
+}
+.css-game_history_search_div input{
+    font-size: 15px;
+    background-color: #232323;
+    border: 1px solid rgba(164,163,162,0.33);
+    padding-left: 5px;
+    color: #969696;height: 23px;
+    width: 111px;
+}
+/**END**/
+/** 优惠 **/
+
+.specialstep1-title{
+    background-image: url('../images/member/title_H00.png');
+    margin-bottom: 19px;
+}
+.specialstep3-title{
+    background-image: url('../images/member/title_H03.png');
+    margin-bottom: 11px;
+}
+.specialstep5_1-title{
+    background-image: url('../images/member/title_H05-1.png');
+    margin-bottom: 11px;
+}
+.specialstep5_2-title{
+    background-image: url('../images/member/title_H05-2.png');
+    margin-bottom: 11px;
+}
+.specialstep5_5-title{
+    background-image: url('../images/member/title_H05-5.png');
+    margin-bottom: 11px;
+}
+.specialstep6-title{
+    background-image: url('../images/member/title_H06.png');
+    margin-bottom: 11px;
+}
+.css-double_bonus_remind{
+    font-size:14px;
+    color:#c9b081;
+    line-height: 25px;
+    margin-left: 24px;
+}
+#special_box .css-RakeBackRowDetail{
+    position: absolute;
+    text-align: left;
+    background-color: #34250e;
+    border: 2px #c29240 solid;
+    padding: 12px 19px;
+}
+#special_box .css-RakeBackRowDetail:before {
+    border-color: #c29240 transparent transparent;
+    border-style: solid solid solid;
+    border-width: 20px 20px 20px 20px;
+    bottom: -40px;
+
+    /* 必須指定，才能顯示內容 */
+    content: '';
+
+    height: 0px;
+    left: 20px;
+
+    /* 必須指定，否則會變梯形 */
+    position: absolute;
+
+    width: 0px;
+}
+#special_box .css-RakeBackRowDetail:after {
+    border-color: #34250e transparent transparent;
+    border-style: solid solid solid solid;
+    border-width: 20px;
+    bottom: -37px;
+
+    /* 必須指定，才能顯示內容 */
+    content: '';
+
+    height: 0px;
+    left: 20px;
+
+    /* 必須指定，否則會變梯形 */
+    position: absolute;
+
+    width: 0px;
+}
+#special_box .css-RakeBackRowDetail .css-title{
+    font-size: 14px;
+    color: #c9b081;
+    line-height: 15px;
+    margin-bottom: 12px;
+}
+#special_box .css-RakeBackRowDetail .css-content{
+    font-size: 13px;
+    color: #adadad;
+    line-height: 18px;
+}
+#rakeback_box .member-table.css-rakeback_table td{
+    background-color: #191919;
+    color: #adadad;
+    font-weight: normal;
+    height: 42px;
+    padding: 3px;
+}
+
+#lian_xiao_form .membertable input ,#lian_xiao_form .member-select{
+    margin: 5px 0px;
+    border-radius: 5px;
+    color: #c9b081;
+    width: 238px;
+    height: 34px;
+    margin-left: 25px;
+}
+#lian_xiao_form .membertable .css-code {
+    background: url(../images/bg-code.jpg);
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px 0 0 4px;
+    width: 58px;
+    margin-left: 0px;
+    height: 36px;
+}
+#lian_xiao_form .membertable .css-code .vcode{
+    width: 100%;
+    height: 36px;
+    margin-top: -1px;
+    border-radius: 3px;
+}
+#lian_xiao_form .membertable .css-recurring_vcode{
+    color:#747474;
+    width:30px;
+    text-align:center;
+    display:inline-block;
+}
+#lian_xiao_form .membertable .css-vcode_div{
+    float:  right;
+    background-color: #232323;
+    height:  36px;
+    margin: 5px 0px;
+    border: 1px solid #85693a;
+    border-radius:  5px;
+}
+#lian_xiao_form .membertable .css-lian_xiao_time_select select{
+    color: #c9b081;
+    height: 34px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+/**END**/
+
+/**  D提款  **/
+#turnout .css-turnoutChangeDeposit{
+    width: 100px;
+    height: 40px;
+    background-image: url(../images/member/btn_D04.png);
+    background-size: 110px 80px;
+    display: block;
+    float: right;
+    cursor: pointer;
+}
+#turnout .css-turnoutChangeDeposit:hover{
+    background-position:0px 40px;
+}
+#turnout .turnout-title_modify_phone{
+    background-image: url('../images/member/title_D.png');
+    margin-bottom: 19px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#turnout .turnout-title_1{
+    background-image: url('../images/member/title_D01.png');
+    margin-bottom: 19px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#turnout .turnout-title_2{
+    background-image: url('../images/member/title_D02.png');
+    margin-bottom: 19px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#turnout .turnout-title_2_1{
+    background-image: url('../images/member/title_D02_1.png');
+    margin-bottom: 19px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#turnout .turnout-title_2_2{
+    background-image: url('../images/member/title_D02_2.png');
+    margin-bottom: 19px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#turnout .turnout-title_4{
+    background-image: url('../images/member/title_D04.png');
+    margin-bottom: 19px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#turnout .css-turnout_status_log{
+    color:#daa850;
+}
+#turnout .css-WithdrawSubtitle{
+    font-size: 15px;
+    margin-bottom: 18px;
+    line-height: 15px;
+    margin-left: 21px;
+    margin-top: 18px;
+    color: #c9b081;
+    width: 564px;
+}
+#turnout .member_turnout_div.disable div.css_deposit_btn{
+    background: #b4b4b4;
+}
+#turnout .css-member_turnout_checkbox{
+    background: url(../images/member/btn_checkbox_n.png) no-repeat;
+    background-size:16px;
+    padding-left: 19px;
+}
+#turnout .css-member_turnout_checkbox.curret{
+    background: url(../images/member/btn_checkbox_checked.png) no-repeat;
+    background-size:16px;
+    padding-left: 19px;
+}
+
+#turnout .css-turnout_deposit .content td,.member_turnout_div.disable .css-turnout_deposit .content.curret td{
+    background :#232323;
+    color :#b4b4b4;
+    font-size: 12px;
+}
+
+#turnout .css-turnout th,#turnout .css-turnout td{
+    text-align: left;
+}
+
+#turnout .css-real_dp_amt{
+    color: #cba460;
+}
+#turnout .css-turnout td input,.css-turnout td select{
+    padding-left: 15px;
+    background-color: #232323;
+    border: 1px solid rgba(164,163,162,0.33);
+    color: #cba460;
+    font-size: 14px;
+}
+
+#turnout .css-turnout .css-turnout_input_title{
+    padding-left: 21px;
+    width: 50px;
+}
+
+#turnout .css-turnout .css-turnout_input_content{
+    width: 238px;
+}
+
+#turnout .css-turnout .css-turnout_input_content input{
+    width: 235px;
+    height: 34px;
+    border-radius: 3px;
+}
+#turnout .css-turnout .css-turnout_input_content select{
+    width: 252px;
+    height: 34px;
+    border-radius: 3px;
+}
+#turnoutstep1 .css-turnout td , #turnoutstep1 .css-turnout th{
+    padding-bottom: 10px;
+}
+#turnout .css-turnout_deposit{
+    margin-bottom: 25px;
+}
+#turnout .css-turnout_deposit td{
+    height: 32px;
+}
+#turnout .css-turnout_deposit .title td{
+    background :#101010;
+    color :#cba460;
+    font-size: 12px;
+}
+#turnout .css-turnout_deposit .content.curret td{
+    background :#84632a;
+    color :#ffffff;
+    font-size: 12px;
+}
+
+#turnout .css_deposit_btn{
+    background: url(../images/member/apply_btn.png) no-repeat;
+    width:85px;
+    height: 21px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    cursor: pointer;
+}
+#turnout .css_deposit_btn.curret,.css_deposit_btn:hover{
+    background: url(../images/member/apply_btn_hover.png) no-repeat;
+}
+
+#turnout .member_turnout_div.disable{
+    color: #b4b4b4;
+}
+#turnout .member_turnout_div.disable input,#turnout .member_turnout_div.disable select,
+#turnout .member_turnout_div.disable td{
+    color: #b4b4b4;
+}
+
+
+#turnout .css-turnout .css-turnout_input_content input::-webkit-input-placeholder {
+    color: rgba(128,127,127,0.53);
+    font-size: 14px;
+}
+#turnout .css-turnout .css-turnout_input_content input:-moz-placeholder {
+    color: rgba(128,127,127,0.53);
+    font-size: 14px;
+}
+#turnout .css-turnout .css-turnout_input_content input::-moz-placeholder {
+    color: rgba(128,127,127,0.53);
+    font-size: 14px;
+}
+#turnout .css-turnout .css-turnout_input_content input:-ms-input-placeholder {
+    color: rgba(128,127,127,0.53);
+    font-size: 14px;
+}
+
+
+#turnout  .css-turnout_distpicker{
+  display: inline-block;
+}
+#turnout .css-turnout_distpicker select{
+  width: 124px !important;
+
+}
+
+#mine .css-turnout_distpicker select{
+    height: 34px;
+    width:118px;
+  }
+/**END**/
+
+/**存款 START**/
+#turnin .turnin_title_check_first_deposit{
+    background-image: url('../images/member/title_check_first_deposit.png');
+    margin-bottom: 19px;
+}
+#turnin .turnin_title_C01{
+    background-image: url('../images/member/title_C01.png');
+    margin-bottom: 19px;
+}
+#turnin .turnin_title_C04{
+    background-image: url('../images/member/title_C04.png');
+    margin-bottom: 19px;
+}
+#turnin .turnin_title_C05{
+    background-image: url('../images/member/title_C05.png');
+    margin-bottom: 19px;
+}
+#turnin .turnin_title_C07{
+    background-image: url('../images/member/title_C07.png');
+    margin-bottom: 19px;
+}
+#turnin .css-noPointRecordBTN{
+    width: 50px;
+    margin: 0px auto;
+    cursor: pointer;
+    height: 19px;
+}
+#turnin .css-noPointRecordBTN:disabled{
+    color: #787777;
+    background :#313131;
+}
+
+#turnin .css-check_first_deposit_msg{
+    color: #c9b081;
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 18px;
+    margin-bottom: 32px;
+}
+
+#turnin .deposit-options ul,#turnin .deposit-nc-option ul{
+    margin: 0 auto;
+    list-style: none;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    height: 35px;
+    width: 100%;
+    background-color: black;
+    padding: 0px 24px;
+}
+#turnin .deposit-options ul li,#turnin .deposit-nc-option ul li{
+    float: left;
+    width: 97px;
+    cursor: pointer;
+    text-align: center;
+    height: 32px;
+    box-sizing: border-box;
+    padding: 0px;
+    padding-top: 2px;
+}
+#turnin .css-member_turnin_sub_title{
+    color: #c9b081;
+    margin-left: 27px;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+#turnin .recharge-details-container {
+    margin-right: 25px;
+    margin-left: 25px;
+    width: 540px;
+    margin-bottom: 4px;
+}
+#turnin .recharge-details-container table{
+    width: 540px;
+}
+#turnin .deposit-options ul li.curret,#turnin .deposit-options ul li:hover{
+    border-bottom: 2px solid #c29240;
+    color: #c29240;
+}
+#turnin .recharge-notes.clearfx{
+    height: 52px;
+}
+#turnin .point-card-box,#turnin .postscript-box{
+    border: 0px solid #665032;
+}
+#turnin input.css-default_submit_btn{
+    width: 156px;
+    height: 34px;
+    margin: 0px auto;
+    cursor: pointer;
+}
+#turnin .css-GuideLink{
+    background: url(../images/member/btn_C01.png);
+    width: 88px;
+    height: 40px;
+    background-size: 110px 90px;
+    margin-right: 10px;
+    float: right;
+    cursor: pointer;
+    border: 0px;
+    background-position-y: -2px;
+}
+#turnin .css-GuideLink:hover{
+    background-image: url(../images/member/btn_C01.png);
+    background-size: 110px 90px;
+    background-position-y: 43px;
+}
+#turninstep1 .textp,#turninstep1 .text-pl{
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+}
+#turninstep1 .menu-pc,#turninstep1 .menu-pl{
+    margin-left :0px;
+}
+#turninstep1 .point-card-list li, #turninstep1 .postscript-list li{
+    height: auto;
+    padding-bottom: 10px;
+}
+#turnin .deposit-nc-option ul li.curret,#turnin .deposit-nc-option ul li:hover{
+    border-bottom: 2px solid #c29240;
+    color: #c29240;
+}
+#turnin .deposit-nc-option ul li{
+    color: #adadad;
+    font-weight: normal;
+}
+#turnin .css-go_turnin_nopoint_log_btn{
+    background: url(../images/member/btn_C04.png);
+    width: 88px;
+    height: 40px;
+    background-size: 110px 80px;
+    margin-right: 10px;
+    float: right;
+    cursor: pointer;
+    border: 0px;
+    background-position-y: 0px;
+}
+
+#turnin .css-go_turnin_nopoint_log_btn:hover{
+    background-image: url(../images/member/btn_C04.png);
+    background-size: 110px 80px;
+    background-position-y: 40px;
+}
+#deposit-hint-modal .css-close_modal.close_modal {
+    height: 34px;
+    width: 156px;
+    position: absolute;
+    right: 204px;
+    top: 258px;
+    cursor: pointer;
+}
+#deposit-hint-modal .css-close_modal.close_modal .css-default_submit_btn{
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    font-family: Microsoft JhengHei;
+}
+#deposit-hint-modal-for-weipaybank{
+    background: none;
+    width: 601px;
+}
+#deposit-hint-modal-for-weipaybank .css-close_modal.close_modal{
+    height: 34px;
+    width: 100%;
+    cursor: pointer;
+}
+#deposit-hint-modal-for-weipaybank .css-close_modal.close_modal .css-default_submit_btn{
+    height: 34px;
+    margin: 0 auto;
+    width: 156px;
+    line-height: 34px;
+    font-size: 14px;
+    font-family: Microsoft JhengHei;
+}
+#turninstep1 .css-clipboard-btn-img{
+    background-image: url(../images/member/btn_copy.png);
+    background-size: 35px 68px;
+    background-position-y: 0px;
+    float: right;
+    height: 34px;
+    width: 34px;
+    display: inline;
+    cursor: pointer;
+    margin-right: 15px;
+}
+#turninstep1 .css-clipboard-btn-img:hover{
+    background-image: url(../images/member/btn_copy.png);
+    background-size: 35px 68px;
+    background-position-y: 34px;
+}
+#turninstep1 .postscriptFS-left input{
+    height: 32px;
+}
+#turninstep1 .css-textclock1{
+    position: absolute;
+    top: 125px;
+    left: 18px;
+    color: #c3954d;
+    font-size: 13px;
+}
+#turninstep1 .css-timer-cd{
+    position: absolute;
+    top: 70px;
+    left: 58px;
+    color: #c3954d;
+    font-size: 35px;
+}
+#turninstep1 .css-clock-pic{
+    position: absolute;
+    width: 205px;
+    height: 205px;
+    top: 32px;
+    left: 0px;
+}
+#turninstep1 .css-default_submit_btn{
+    width: 136px;
+    height: 32px;
+    line-height: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#turninstep1 .css-postscriptFS-left{
+    height: 100%;
+    width: 60%;
+    float: left;
+    padding: 1em;
+    padding-right: 0px;
+    box-sizing: border-box;
+    color: #797979;
+    padding-bottom: 28px;
+}
+#turninstep1 .member-input{
+    background-color: #232323;
+    border: 1px solid #9c7635;
+    border-radius: 3px;
+    height: 34px;
+    width: 172px;
+    margin-left: 7px;
+    color: #c29240;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+#turninstep1 .css-postscriptFS-left table td{
+    padding-bottom: 14px;
+}
+#turninstep1 .css-copy_msg{
+    position:  fixed;
+    width: 50px;
+    height: 20px;
+    font-size: 9px;
+    background:  #f8b551;
+    color:  #000;
+    line-height: 18px;
+    text-align:  center;
+    border-radius: 1px;
+    display: none;
+}
+#turninstep1 .postscriptFS-box{
+    height: 320px;
+}
+#turninstep1 .css-bdemth img{
+    width: 432px;
+    height: 344px;
+    margin: 0 auto;
+    border: 2px solid #c29240;
+    display: none;
+}
+#turninstep1 .css-bdemth div{
+    color: #c29240;
+    font-size:20px;
+    width: 240px;
+    margin: 0px auto;
+    margin-bottom: 12px;
+    display: none;
+}
+#turninstep1 .css-bdemth div img{
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    border: 0px solid #c29240;
+    float: left;
+    margin-right: 8px;
+}
+#turninstep1 .css-bdemth.css-current img,#turninstep1 .css-bdemth.css-current div{
+    display: block;
+}
+#turninstep1 ul.css-demt_method {
+    border: 0px solid #222222;
+    list-style: none;
+    width: 437px;
+    color: #ca8b25;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#turninstep1 ul.css-demt_method li {
+    float: left;
+    color: #9c7a43;
+    text-align: center;
+    width: 86.5px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+#turninstep1 ul.css-demt_method li img {
+    opacity: 0.8;
+    width: 78px;
+    height: 68px;
+    padding: 1px;
+    margin-right: 2px;
+    border: 1px solid #323232;
+}
+#turninstep1 ul.css-demt_method li:hover img,#turninstep1 ul.css-demt_method li.css-current img {
+    border: 1px solid #c29240;
+    opacity: 1;
+}
+#turninstep3 .deposit-nc-main table td{
+    color: #969695;
+}
+#turninstep3 .deposit-nc-main table td .input-nc1,#turninstep3 .deposit-nc-main table td select,
+#turninstep3 .deposit-nc-main table td .upload-btn{
+    border-radius: 3px;
+    background-color: #232323;
+    border: 1px solid #68532e;
+    color: #cba460;
+    height: 34px;
+}
+#turninstep3 .deposit-nc-main table td .upload-btn{
+    height: 27px;
+}
+#turninstep1 select.customize-dropdown1{
+    width: 252px;
+    height: 34px;
+    border-radius: 3px;
+    padding-left: 15px;
+    background-color: #232323;
+    border: 1px solid #68532e;
+    color: #cba460;
+    font-size: 14px;
+}
+#turninstep1 input.customize-input,#turninstep1 input.customize-input2{
+    width: 235px;
+    height: 34px;
+    border-radius: 3px;
+    padding-left: 15px;
+    background-color: #232323;
+    border: 1px solid #68532e;
+    color: #cba460;
+    font-size: 14px;
+}
+#turninstep1 select.customize-dropdown2{
+    border-radius: 3px;
+    padding-left: 15px;
+    background-color: #232323;
+    border: 1px solid #68532e;
+    color: #cba460;
+}
+#turnin_nopoint_apply .deposit-nc-main tr{
+    height: 46px;
+}
+#turninstep1 .menu-pc, #turninstep1 .menu-pl{
+    width: 410px;
+}
+#turninstep1 .show-dropdown{
+    top: 5px;
+}
+#turninstep1 .clickDp::-webkit-calendar-picker-indicator{
+  position: relative;
+    display: block;
+    right: -14px;
+    top: 5px;
+    height: 25px;
+    width: 25px;
+    z-index: 1000;
+    color: transparent;
+    visibility: visible;
+    background: #ffffff00;
+    cursor: pointer;
+}
+#turninstep1 .show-dropdown{
+    top: 5px;
+}
+#turninstep1 .clickDp::-webkit-calendar-picker-indicator{
+  position: relative;
+    display: block;
+    right: -14px;
+    top: 5px;
+    height: 25px;
+    width: 25px;
+    z-index: 1000;
+    color: transparent;
+    visibility: visible;
+    background: #ffffff00;
+    cursor: pointer;
+}
+#turninstep1 .point-card-list li.css-point_msg_li, #turninstep1 .postscript-list li.css-point_msg_li{
+    color:#adadad;
+    height: 44px;
+    line-height: 0px;
+    padding-bottom: 0px;
+}
+.css-pay_ul_style_1.point-card-list{
+    width: 377px;
+    padding-right: 14px;
+}
+#turninstep1 .css-pay_ul_style_1.point-card-list .menu-pc{
+    width: 253px;
+}
+.css-point_msg_div2{
+    float: right;
+    margin-right: 27px;
+}
+
+#turninstep1  div.css-point_msg_div, #turninstep1 div.css-point_msg_div{
+    color:#adadad;
+    height: 44px;
+    line-height: 0px;
+    padding-bottom: 0px;
+}
+
+
+.css-point_msg_table{
+  margin: 20px auto 0 !important;
+  max-width: 140px;
+  width: 140px;
+  border: 1px solid red;
+  border-spacing: 0;
+  text-align: center;
+  border-collapse: collapse;
+  border-radius: 6px;
+
+
+}
+
+.css-point_msg_table tr td{
+  color: red;
+  text-align: center;
+  height: 16px;
+  font-size: 12px;
+  line-height: 1.2;
+  width: 33%;
+}
+
+.css-point_msg_table tr:first-child{
+  border-bottom: 1px solid red;
+  height: 35px
+}
+
+.css-point_msg_table tr:last-child,.css-point_msg_table tr:nth-child(2){
+  height: 35px
+}
+/*End Edit 8-31-18*/
+
+
+#deposit-apply-prompt-modal  .css-hide_modal_checkbox_img{
+    display: block;
+    width: 90px;
+    height: 13px;
+    margin-left: 191px;
+    background-image: url(../images/member/apply_prompt_modal_checkbox.png);
+    background-size: 90px 26px;
+    background-position-y: 0px;
+}
+#deposit-apply-prompt-modal input[type=checkbox]:checked ~ .css-hide_modal_checkbox_img {
+    background-size: 90px 26px;
+    background-position-y: 13px;
+}
+
+#deposit-apply-prompt-modal .css-modal_body{
+    background: url(../images/member/apply_prompt_modal_bg.png)  no-repeat;
+    width: 530px;
+    height: 378px;
+}
+#deposit-apply-prompt-modal .css-modal_content{
+    padding-top: 45px;
+    margin-left: 190px;
+}
+#deposit-apply-prompt-modal .css-content{
+    color:#BA9C5F;
+    font-size: 14px;
+    font-weight: 900;
+    font-family: Microsoft JhengHei;
+}
+#deposit-apply-prompt-modal .css-title{
+    color:#8F7D5D;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: Microsoft JhengHei;
+}
+#deposit-apply-prompt-modal .css-content{
+    color:#BA9C5F;
+    font-size: 14px;
+    font-weight: 900;
+    font-family: Microsoft JhengHei;
+}
+
+#deposit-apply-prompt-modal-for-payplus  .css-hide_modal_checkbox_img{
+    display: block;
+    width: 90px;
+    height: 13px;
+    margin-left: 191px;
+    background-image: url(../images/member/apply_prompt_modal_checkbox.png);
+    background-size: 90px 26px;
+    background-position-y: 0px;
+}
+#deposit-apply-prompt-modal-for-payplus input[type=checkbox]:checked ~ .css-hide_modal_checkbox_img {
+    background-size: 90px 26px;
+    background-position-y: 13px;
+}
+
+#deposit-apply-prompt-modal-for-payplus .css-modal_body{
+    background: url(../images/member/apply_prompt_modal_bg.png)  no-repeat;
+    width: 530px;
+    height: 378px;
+}
+#deposit-apply-prompt-modal-for-payplus .css-modal_content{
+    padding-top: 45px;
+    margin-left: 190px;
+}
+#deposit-apply-prompt-modal-for-payplus .css-content{
+    color:#BA9C5F;
+    font-size: 14px;
+    font-weight: 900;
+    font-family: Microsoft JhengHei;
+}
+#deposit-apply-prompt-modal-for-payplus .css-title{
+    color:#8F7D5D;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: Microsoft JhengHei;
+}
+#deposit-apply-prompt-modal-for-payplus .css-content{
+    color:#BA9C5F;
+    font-size: 14px;
+    font-weight: 900;
+    font-family: Microsoft JhengHei;
+}
+
+
+#turninstep1 .css-customize-input::-webkit-input-placeholder {
+    color: #969696;
+}
+#turninstep1 .css-customize-input:-moz-placeholder {
+    color: #969696;
+}
+#turninstep1 .css-customize-input::-moz-placeholder {
+    color: #969696;
+}
+#turninstep1 .css-customize-input:-ms-input-placeholder {
+    color: #969696;
+}
+
+#turnin .deposit-options .css-turnin_cate_ul{
+    margin: 0 auto;
+    list-style: none;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    height: 62px;
+    width: 100%;
+    background-color: #151515;
+    padding: 0px;
+}
+#turnin .deposit-options .css-turnin_cate_ul li{
+    float: left;
+    width: 126px;
+    cursor: pointer;
+    text-align: center;
+    height: 62px;
+    box-sizing: border-box;
+    padding: 0px;
+    padding-top: 18px;
+    padding-left: 42px;
+}
+
+
+//支付分类的预设样式
+#turnin .deposit-options .css-turnin_cate_ul li.css-paydefault_li {
+    width: 126px;
+    height: 62px;
+}
+#turnin .deposit-options .css-turnin_cate_ul li.css-paydefault_li .css-pay_name{
+    font-family: Microsoft JhengHei;
+    color: #434343;
+}
+#turnin .deposit-options .css-turnin_cate_ul li.css-paydefault_li:hover > .css-text .css-pay_name,
+#turnin .deposit-options .css-turnin_cate_ul li.css-paydefault_li.curret .css-text .css-pay_name{
+    color: #c9b081;
+}
+#turnin .deposit-options .css-turnin_cate_ul li.css-paydefault_li .css-hr_line{
+    width: 1px;
+    display: inline-block;
+    float: right;
+    height: 61px;
+    margin-top: 21px;
+    border-right: 1px solid black;
+}
+#turnin .deposit-options .css-turnin_cate_ul li.css-paydefault_li .css-icon{
+    width: 52px;
+    height: 100%;
+    display: inline-block;
+    float: left;
+}
+
+#turnin .deposit-options .css-turnin_cate_ul li.css-paydefault_li .css-text .css-icon_img{
+    height: 37px;
+}
+
+#turnin .deposit-options .css-turnin_cate_ul li.css-paydefault_li .css-text .css-show_hot_turnin_icon{
+    background: url(../images/member/show_hot_turnin_icon.png) no-repeat;
+    margin-left: 24px;
+}
+
+#turnin .deposit-options .css-turnin_cate_ul li.css-paydefault_li .css-text .css-icon_img.css-hot_new_icon{
+    background: url(../images/member/hot_new.png) no-repeat;
+    margin-left: 24px;
+    margin-top: 9px;
+    height: 29px;
+    margin-right: -15px;
+    position: relative;
+}
+
+#turnin .deposit-options .css-turnin_cate_ul li.css-paydefault_li .css-icon .css-pay_icon{
+    width: 52px;
+    height: 62px;
+    margin-top: 19px;
+    display: block;
+}
+
+/*微信转帐的样式*/
+#turnin .deposit-options .css-turnin_cate_ul li.css-Weipaybank_li .css-icon .css-pay_icon{
+    background: url(../images/member/pay_weipaybank.png) 0 -62px no-repeat;
+}
+#turnin .deposit-options .css-turnin_cate_ul li.css-Weipaybank_li:hover > .css-icon .css-pay_icon,
+#turnin .deposit-options .css-turnin_cate_ul li.css-Weipaybank_li.curret .css-icon .css-pay_icon{
+    background: url(../images/member/pay_weipaybank.png) 0 0px no-repeat;
+}
+
+/*支付宝入款的样式*/
+#turnin .deposit-options .css-turnin_cate_ul li.css-Banktrans_li .css-icon .css-pay_icon{
+    background: url(../images/member/pay_banktrans.png) 0 -62px no-repeat;
+}
+#turnin .deposit-options .css-turnin_cate_ul li.css-Banktrans_li:hover > .css-icon .css-pay_icon,
+#turnin .deposit-options .css-turnin_cate_ul li.css-Banktrans_li.curret .css-icon .css-pay_icon{
+    background: url(../images/member/pay_banktrans.png) 0 0px no-repeat;
+}
+
+/*卡号上分的样式*/
+#turnin .deposit-options .css-turnin_cate_ul li.css-Banktranscard_li .css-icon .css-pay_icon{
+    background: url(../images/member/pay_banktranscard.png) 0 -62px no-repeat;
+}
+#turnin .deposit-options .css-turnin_cate_ul li.css-Banktranscard_li:hover > .css-icon .css-pay_icon,
+#turnin .deposit-options .css-turnin_cate_ul li.css-Banktranscard_li.curret .css-icon .css-pay_icon{
+    background: url(../images/member/pay_banktranscard.png) 0 0px no-repeat;
+}
+
+/*扫码的样式*/
+#turnin .deposit-options .css-turnin_cate_ul li.css-QRcode_li .css-icon .css-pay_icon{
+    background: url(../images/member/pay_QR.png) 0 -62px no-repeat;
+}
+#turnin .deposit-options .css-turnin_cate_ul li.css-QRcode_li:hover > .css-icon .css-pay_icon,
+#turnin .deposit-options .css-turnin_cate_ul li.css-QRcode_li.curret .css-icon .css-pay_icon{
+    background: url(../images/member/pay_QR.png) 0 0px no-repeat;
+}
+
+/*第三方支付的样式*/
+#turnin .deposit-options .css-turnin_cate_ul li.css-Other_li .css-icon .css-pay_icon{
+    background: url(../images/member/pay_other.png) 0 -62px no-repeat;
+}
+#turnin .deposit-options .css-turnin_cate_ul li.css-Other_li:hover > .css-icon .css-pay_icon,
+#turnin .deposit-options .css-turnin_cate_ul li.css-Other_li.curret .css-icon .css-pay_icon{
+    background: url(../images/member/pay_other.png) 0 0px no-repeat;
+}
+/**/
+
+
+
+#turnin .deposit-options .css-turnin_cate_ul li.curret,
+#turnin ,#turnin .deposit-options .css-turnin_cate_ul li:hover{
+    border-bottom: 1px solid #c29240;
+    color: #c9b081;
+}
+
+/**END**/
+/**微信转银行卡**/
+.css-weipaybank_teaching_button{
+    background-color: #232323;
+    border: 0;
+    border-radius: 4px;
+    margin: 14px 0 0 83px;
+    height: 35px;
+    width: 201px;
+    color: #9c7635;
+    font-family: "SimSun";
+    cursor: pointer;
+}
+
+.css-weipaybank_teaching_button:hover{
+    background-color: #c29840;
+    color: #fff
+}
+
+.css-weipaybank_warning_msg{
+    padding-top: 12px;
+    width: 574px;
+    vertical-align: middle;
+    font-family: "SimSun";
+}
+
+.css-weipaybank_warning_msg span{
+    color: red !important;
+}
+
+.css-weipaybank_warning_msg img{
+    vertical-align: top
+}
+
+#weipaybank_important_prompt .css-big-red{
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Arial";
+    color: #ff1515;
+    vertical-align: sub;
+    padding: 0 8px;
+}
+#weipaybank_important_prompt .css-big-redB{
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Arial";
+    color: #ff1515 !important;
+    vertical-align: sub;
+    padding: 0 8px;
+}
+#weipaybank_important_prompt .css-customized-checkbox{
+    vertical-align: middle
+}
+#weipaybank_important_prompt .css-weipaybank_check_select{
+    color:#c29840;
+    background-color: #242424;
+    border: 1px solid #313131;
+}
+#weipaybank_important_prompt .css-weipaybank_ul{
+    list-style: none;
+    border: 1px dashed #2c2c2c;
+    margin: 20px 1.5em 5px;
+    width: 425px;
+    padding: 1em;
+}
+
+#weipaybank_important_prompt .css-weipaybank_checkbox{
+    padding: 0 20px;
+    vertical-align: middle;
+    color: #585858;
+}
+#weipaybank_important_prompt .css-buttons-optionsMain:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+#weipaybank_important_prompt .css-return-opt,#weipaybank_important_prompt  .css-go-opt{
+    width: 60px;
+    height: 35px;
+    text-align: center;
+    background-color: #2c2c2c;
+    line-height: 31px;
+    margin-right: 10px;
+    cursor: pointer;
+    float: left;
+}
+
+#weipaybank_important_prompt .css-return-opt:hover{
+    background-color: #c29840;
+    color: #FFFFFF;
+}
+.css-payname_weipaybank,.css-payname_payplusWeipaybank,
+.css-payname_payplusAlipaybank,.css-payname_alipaybankDigital,
+.css-payname_alipayThirdParty{
+    display: none;
+}
+/**END**/
+
+/**第一次存提款修改电话**/
+.css-manual_validation_and_modify_phone .css-modify_phone_btn{
+    border: 1px solid;
+    border-radius:  3px;
+    font-size:  13px;
+    color: #c29240;
+    cursor: pointer;
+    padding: 1px 4px;
+}
+.css-manual_validation_and_modify_phone .css-modify_phone_btn:hover{
+    color: #c9b081;
+}
+
+.css-manual_validation_and_modify_phone .css-default_btn{
+    width: 54px;
+    height: 31px;
+    border: 1px solid;
+    border-radius:  3px;
+    font-size:  13px;
+    color: #c29240;
+    cursor: pointer;
+    margin-left: 1px;
+    background-color: #101010;
+}
+.css-manual_validation_and_modify_phone .css-default_btn:hover{
+    color: #c9b081;
+}
+
+.css-manual_validation_and_modify_phone input{
+    width: 257px;
+    height: 20px;
+    margin: 0px;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 3px;
+    color: #d5b27a;
+    background-color: #232323;
+    border: 1px solid #85693a;
+    margin-left: 10px;
+    margin-right: 3px;
+    padding-top: 2px;
+}
+.css-manual_validation_and_modify_phone .css-valid_phone_status_msg{
+    width: 87%;
+}
+.css-manual_valid_phone{
+    
+    width: 113px;
+    height: 32px;
+    background: #0976a7;
+    color: #fff;
+    border-radius: 3px;
+    border: 0px;
+}
+.css-manual_valid_phone:hover{
+    background: #014e71;
+}
+.css-manual_valid_phone:disabled{
+    color: #757575;
+    background-color: #202020;
+}
+.css-re_manual_valid_phone{
+    padding: 7.5px 10px;
+    background: #0976a7;
+    color: #fff;
+    border-radius: 3px;
+    border: 0px;
+    cursor: pointer;
+}
+.css-re_manual_valid_phone:hover{
+    background: #014e71;
+}
+.css-re_manual_valid_phone:disabled{
+    color: #fff;
+    background :#5b5b5b;
+}
+.css-manual_validation_and_modify_phone .css-prompt_msg{
+    margin-left: 111px;
+    color: #c9b081;
+    display: none;
+}
+.css-manual_validation_and_modify_phone .css-default_submit_btn{
+    margin-left: auto;
+    margin-right: auto;
+}
+.CenterCon .Membercon .rightmod .css-valid_phone_status_msg p.css-default_msg{
+    color: #9c7c3c;
+    line-height: 17px;
+}
+.css-valid_phone_status_msg{
+    padding: 26px 20px;
+    background: #000;
+    border: 1px solid #9c7c3c;
+    margin: 30px auto;
+    border-radius: 3px;
+    display: none;
+}
+#manual_validation_phone_error_modal,#manual_validation_phone_correct_modal,#manual_validation_updatephone_correct_modal,
+#manual_validation_modal,#manual_validation_send_sms_modal,#manual_validation_modal_status_nc{
+    font-family: Microsoft JhengHei;
+    background-color: #101010;
+}
+#manual_validation_phone_error_modal .modal-body ,#manual_validation_phone_correct_modal .modal-body,#manual_validation_updatephone_correct_modal .modal-body,
+#manual_validation_modal .modal-body,#manual_validation_send_sms_modal .modal-body,#manual_validation_modal_status_nc{
+    font-family: Microsoft JhengHei;
+    background-color: #101010;
+    border-radius: 3px;
+    border: 1px solid #c29240;
+}
+.css-input_show_msg_div {
+    display: none;
+    font-size :13px;
+    color: rgba(245,10,10,0.61);
+}
+.css-input_show_msg_tr{
+    height: 20px;
+}
+#turnout .css-turnout td.css-turnout_input_content input.error,#turnout .css-turnout td.css-turnout_input_content select.error{
+    border: 1px solid rgba(245,10,10,0.61);
+}
+#turnout .css-turnout td.css-turnout_input_content input.success,#turnout .css-turnout td.css-turnout_input_content select.success{
+    border: 1px solid #68532e;
+}
+#turnoutstep1 .css-turnout_step1_input_table td, #turnoutstep1 .css-turnout_step1_input_table th{
+    font-size: 14px;
+    padding-bottom: 0px;
+}
+#turnoutstep1 .css-turnout_step1_input_table th{
+    font-weight: normal;
+    padding-right: 20px;
+}
+/**END**/
+/**存款画面历史姓名**/
+.css-Cashier_tbk_name_li .css-history_bankcard_btn{
+    top: 211px;
+}
+.css-Cashier_tbk_name_li .show-dropdown{
+    display:  none;
+}
+.css-member_turnin_tbk_name_li{
+    position: relative;
+}
+.css-member_turnin_tbk_name_li .css-history_bankcard_btn{
+    position: absolute;
+}
+.css-history_bankcard_btn{
+    display: inline-block;
+    width: 56px;
+    height: 30px;
+    top: 1px;
+    right: 74px;
+    color: #cba460;
+    font-family: "SimSun";
+    background-color: #232323;
+    padding: 5px 7px 0;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.css-history_collection{
+    border: 1px solid #a28a61;
+    padding: 10px;
+    width: 328px;
+    position: absolute;
+    bottom: 55px;
+    left: 112px;
+    background-color: #1b1b1b;
+}
+
+.css-close_histCol{
+    position: absolute;
+    top: -14px;
+    right: -16px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.css-close_histCol img:hover{
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+}
+
+.css-close_histCol img{
+    max-width: 100%;
+    max-height: 100%;
+    webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+.css-history_collection:after{
+    content: "";
+    background: url(../images/member/extension2.png);
+    width: 16px;
+    height: 8px;
+    display: inline-block;
+    position: absolute;
+    bottom: -8px;
+    right: 16px;
+}
+
+.css-collection_data ul li{
+    display: inline-block ;
+    padding: 1px 15px !important;
+    background-color: #323232 !important;
+    position: relative !important;
+    cursor: pointer !important;
+    position: relative;
+}
+
+.css-collection_data ul li:hover{
+    background-color: #c29840 !important;
+    color: #fff !important
+}
+
+
+.css-bankcard_delete{
+    position: absolute;
+    top: -8px;
+    width: 13px;
+    height: 19px;
+    right: 0px;
+    display: inline-block;
+}
+
+
+.css-bankcard_showPass{
+    position: absolute;
+    top: 1px;
+    display: inline-block;
+    width: 170px;
+    background-color: #1b1b1b;
+    border: 1px solid #313131;
+    left: -170px;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 4px;
+}
+
+.css-bankcard_showPass:after{
+    content: "";
+    background: url(../images/member/extension.png);
+    width: 14px;
+    height: 24px;
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    right: -11px;
+}
+.css-collection_data ul li{
+    margin: 0 5px 10px;
+}
+
+.css-collection_data{
+    border-bottom: 1px solid #a28a61;
+    min-height: 77px;
+}
+
+.css-bottom-contentH{
+    padding-top: 4px;
+    color: #c39f63;
+}
+
+.css-bankcard_delete-content{
+    background: url(../images/member/delete1.png);
+    width: 13px;
+    height: 13px;
+    float: right;
+    margin-top: 7px;
+    cursor: pointer;
+    position: relative;
+}
+
+.css-bankcard_delete-content:hover{
+    background: url(../images/member/delete2.png);
+}
+
+.css-bankcard_warning_delete{
+    position: absolute;
+    top: -35px;
+    height: 27px;
+    border: 1px solid #3e3e3e;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    left: -130px;
+    background-color: #282828;
+    color: #c39f63;
+}
+
+.css-bankcard_warning_delete:after{
+    content: "";
+    background: url(../images/member/arrow123B.png);
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    right: 9px;
+}
+/****/
+
+.css-input_style1{
+    float: left;
+    background: #000;
+    color:#cba460;
+    font-size: 14px;
+    width: 250px;
+    margin-left: 4px;
+    padding-left: 8px;
+    border: #515151 1px solid;
+}
+
+/*- 20180821我的账户的积分页面 -*/
+
+.css-member_title{
+    background-color: #1c1c1c;
+    border-bottom: 1px solid #d39336;
+    width: 580px;
+    height: 40px;
+    background-size: 580px 40px;
+    margin-top: 13px;
+}
+
+.css-member_title .css-member_span{
+    color: #e6b651;
+    font-size: 15px;
+    padding-top: 4px;
+    padding-left: 12px;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 32px;
+}
+.css-member_title .css-member_tab{
+    display: inline-block;
+    margin-top: 9px;
+    height: 23px;
+    color: #dab576;
+    padding-left: 12px;
+    line-height: 22px;
+    float: right;
+    padding: 0 12px;
+}
+
+.css-member_title .css-member_tab:hover{
+    color: #e8d5b2
+}
+
+.css-member_title .css-member_auto{
+    width: auto;
+}
+
+.css-member_title .css-mtab_active{
+    color: #969696 !important
+}
+
+.css-member_title .css-member_div2{
+    float: right;
+    border-right: 1px solid #dab576;;
+    height: 23px;
+    display: inline-block;
+    margin-top: 8px;
+    padding-top: 0px;
+}
+/*AGDetails*/
+ #AG-details .css-member_title,#AG-details .css-gameContainer_main1 {
+  width: 100% !important;
+}
+
+#AG-details .css-gameContainer_main1 {
+    padding: 10px 10px 10px 12px;
+}
+
+#AG-details #AG-option_selector{
+  color: #969696;
+  background-color: transparent;
+  border: 0px;
+  margin-top: 9px;
+  width: 135px;
+  padding-right: 0px;
+  margin-right: 4px;
+}
+
+#AG-details #AG-option_selector option{
+  background-color: #1c1c1c;
+  height: 30px
+}
+/*End AG Details*/
+/*- 新的我的账户的积分页面 -*/

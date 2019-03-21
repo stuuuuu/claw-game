@@ -1,0 +1,1844 @@
+#bstep4 {
+	overflow: visible;
+	background: none;
+	border: none;
+	margin-left: -5px;
+	margin-top: -4px;
+}
+a.hotnav_double {
+	background: url('../images/bankmenu-double.png') no-repeat;
+	background-position: -1px -45px;
+	height: 34px;
+	width: 135px !important;
+	border: none;
+	overflow: visible;
+	margin-left: -5px;
+	margin-top: -4px;
+}
+a.hotnav_double:hover, li.curret a.hotnav_double {
+	background: url('../images/bankmenu-double.png') no-repeat;
+}
+#bstep5 {
+	overflow: visible;
+	background: none;
+	border: none;
+	margin-left: -5px;
+	margin-top: -4px;
+}
+a.hotnav {
+	background: url('../images/vipmenu-1.png') no-repeat;
+	background-position: -1px -45px;
+	height: 34px;
+	width: 135px !important;
+	border: none;
+	overflow: visible;
+	margin-left: -5px;
+	margin-top: -4px;
+}
+a.hotnav:hover, li.curret a.hotnav {
+	background: url('../images/vipmenu-1.png') no-repeat;
+}
+#indexwrap.marco {
+	background: url(../images/indexbg_marco.jpg) no-repeat top center #110c09;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+#indexwrap.korea {
+	background: url(../images/indexbg_korea.jpg) no-repeat top center #110c09;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+#indexwrap.singapore {
+	background: url(../images/indexbg_singapore.jpg) no-repeat top center #110c09;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+#indexwrap.malaysia {
+	background: url(../images/indexbg_malaysia.jpg) no-repeat top center #110c09;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+#indexwrap.cambodia {
+	background: url(../images/indexbg_cambodia.jpg) no-repeat top center #110c09;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+#indexwrap.philippines {
+	background: url(../images/indexbg_philippines.jpg) no-repeat top center #110c09;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+#indexwrap.vietnam {
+	background: url(../images/indexbg_vietnam.jpg) no-repeat top center #110c09;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+#Top {
+	height: 110px;
+	width: 100%;
+	background: url(../images/topbg.jpg) repeat-x;
+}
+#indexTop {
+	height: 102px;
+	width: 990px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.TopCon {
+	width: 970px;
+	height: 110px;
+	margin: 0 auto;/*overflow: hidden;*/
+}
+/*--首頁垂直跑馬燈開始--*/
+.Marquee {
+	color: #fff;
+	height: 28px;
+	width: 600px;
+	float: left;
+	overflow: hidden;
+	display: block;
+}
+#ticker {
+	position: relative;
+	overflow: hidden;
+// 超出範圍的部份要隱藏 height: 28px;
+	line-height: 28px;
+	float: left;
+}
+#tickerContainer {
+	height: 28px;
+	overflow: hidden;
+	padding: 0 10px 0 5px;
+}
+.tickerContent {
+	overflow: hidden;
+}
+.tickerContent p {
+	text-decoration: none;
+	white-space: nowrap;
+	height: 27px;
+	line-height: 27px;
+}
+.tickerContent a {
+	text-decoration: none;
+	color: #fff;
+}
+.tickerContent a:hover {
+	text-decoration: underline;
+}
+#tickerContainer {
+	height: 28px;
+	overflow: hidden;
+}
+/*
+#tickerScroller {
+	height:100%;
+}
+
+.tickerContent {
+	float:left;
+	margin-right: 50px;
+}
+*/
+/*--首頁垂直跑馬燈結束*/
+.time {
+	color: #311f07;
+	font-size: 12px;
+	float: left;
+	line-height: 28px;
+	margin-right: 10px;
+	display: block;
+}
+/*170809NEW*/
+.onlineservicebtn {
+	display: inline-block;
+	float: left;
+	border-left: 1px solid #7b591c;
+}
+/*END*/
+.onlineservicebtn a {
+	display: inline-block;
+	text-indent: -999px;
+	height: 28px;
+	width: 91px;
+	background: url(../images/onlineservice_btn.jpg);
+}
+.onlineservicebtn a:hover {
+	background: url(../images/onlineservice_btn_m.jpg);
+}
+/*页尾*/
+#indexFooter {
+	background: #0b0907;
+	width: 100%;
+	overflow: hidden;
+	border-top: 1px solid #a27c3b;
+	text-align: center;
+	color: #866631;
+	line-height: 18px;
+	padding: 30px 0 80px;
+}
+#indexFooter .infnav {
+	background: url(../images/indexfooternavbg.jpg);
+	height: 38px;
+	width: 540px;
+	padding: 0 30px;
+	line-height: 38px;
+	color: #a27c3b;
+	border: 1px solid #a27c3b;
+	border-radius: 2px;
+	-moz-border-radius: 2px; /* Firefox 3.6 and earlier */
+	margin: 0 auto 20px auto;
+}
+#indexFooter .infnav a {
+	color: #a27c3b;
+}
+#indexFooter .infnav a:hover {
+	color: #fff;
+}
+#ClubFtooer {
+	background: #000;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	color: #585858;
+	padding-bottom: 50px;
+}
+#ClubFtooer ul {
+	list-style: none;
+	font-size: 13px;
+	margin: 15px auto 10px auto;
+	overflow: hidden;
+	width: 780px;
+}
+#ClubFtooer li {
+	float: left;
+	margin-right: 30px;
+}
+#ClubFtooer li a {
+	color: #585858;
+	text-decoration: none;
+}
+#ClubFtooer li a:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+#Footer {
+	background: #2c2c2c;
+	width: 100%;
+	overflow: hidden;
+	border-top: 1px solid #414141;
+}
+.FooterCon {
+	width: 1160px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 20px;
+}
+.FooterNav {
+	border-top: 1px solid #414141;
+	text-align: center;
+	padding: 0px 0 80px 0;
+	color: #585858;
+	font-size: 12px;
+}
+.FooterNav ul {
+	display: table;
+	list-style: none;
+	font-size: 13px;
+	margin: 15px auto 20px auto;
+	overflow: hidden;
+}
+.FooterNav li {
+	float: left;
+	margin: 0px 15px;
+}
+.FooterNav li a {
+	color: #585858;
+	text-decoration: none;
+}
+.FooterNav li a:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+.FooterLogo {
+	border-bottom: 1px solid #0d0d0d;
+	padding: 25px 10px;
+	text-align: center;
+	color: #585858;
+}
+.FooterLogo a {
+	color: #999999;
+	text-decoration: none;
+}
+.FooterLogo a:hover {
+	color: #999999;
+	text-decoration: underline;
+}
+.FooterLiveGame {
+	border-bottom: 1px solid #0d0d0d;
+	padding: 30px 0;
+	color: #585858;
+}
+.FooterLiveGame td, .FooterSlot td {
+	background: url(../images/icon.gif) no-repeat;
+	background-position: left center;
+	padding-left: 13px;
+}
+.FooterLiveGame td.none {
+	background: none;
+	padding-left: 0;
+}
+.FooterLiveGame a, .FooterSlot a {
+	color: #999999;
+	margin-left: 2px;
+	text-decoration: none;
+}
+.FooterLiveGame a:hover, .FooterSlot a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.FooterSlot {
+	border-bottom: 1px solid #0d0d0d;
+	border-top: 1px solid #414141;
+	padding: 30px 0;
+}
+/*中间*/
+.indexCenter {
+	width: 990px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom: 60px;
+	overflow: hidden;
+	display: none;
+}
+.topnav {
+	width: 990px;
+	height: 50px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.topnav ul {
+	list-style: none;
+}
+.topnav ul li {
+	float: left;
+	display: block;
+	text-indent: -9999px;
+	height: 50px;
+	cursor: pointer;
+}
+.topnav ul li.cn {
+	width: 141px;
+	background: url(../images/topbignavbg.jpg) 0 0;
+}
+.topnav ul li.cn:hover, .topnav ul li.cn.curret {
+	background: url(../images/topbignavbg.jpg) 0 -50px;
+}
+.topnav ul li.kr {
+	width: 141px;
+	background: url(../images/topbignavbg.jpg) -141px 0;
+}
+.topnav ul li.kr:hover, .topnav ul li.kr.curret {
+	background: url(../images/topbignavbg.jpg) -141px -50px;
+}
+.topnav ul li.sg {
+	width: 142px;
+	background: url(../images/topbignavbg.jpg) -282px 0;
+}
+.topnav ul li.sg:hover, .topnav ul li.sg.curret {
+	background: url(../images/topbignavbg.jpg) -282px -50px;
+}
+.topnav ul li.my {
+	width: 142px;
+	background: url(../images/topbignavbg.jpg) -424px 0;
+}
+.topnav ul li.my:hover, .topnav ul li.my.curret {
+	background: url(../images/topbignavbg.jpg) -424px -50px;
+}
+.topnav ul li.cb {
+	width: 143px;
+	background: url(../images/topbignavbg.jpg) -566px 0;
+}
+.topnav ul li.cb:hover, .topnav ul li.cb.curret {
+	background: url(../images/topbignavbg.jpg) -566px -50px;
+}
+.topnav ul li.ph {
+	width: 142px;
+	background: url(../images/topbignavbg.jpg) -709px 0;
+}
+.topnav ul li.ph:hover, .topnav ul li.ph.curret {
+	background: url(../images/topbignavbg.jpg) -709px -50px;
+}
+.topnav ul li.vn {
+	width: 139px;
+	background: url(../images/topbignavbg.jpg) -851px 0;
+}
+.topnav ul li.vn:hover, .topnav ul li.vn.curret {
+	background: url(../images/topbignavbg.jpg) -851px -50px;
+}
+.indexCenter .inner {
+	border: #a27c3b 3px solid;
+	width: 984px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+.indexCenter .inner .leftmod {
+	width: 164px;
+	border-right: #a27c3b 3px solid;
+	float: left;
+	height: 654px;
+	overflow: hidden;
+}
+.indexCenter .inner .centermod {
+	width: 164px;
+	border-right: #a27c3b 3px solid;
+	float: left;
+	height: 654px;
+	overflow: hidden;
+}
+.indexCenter .inner .centermod .nav {
+	width: 142px;
+	height: 324px;
+	padding: 0 11px;
+	background: url(../images/smallnavbg.jpg);
+	border-bottom: #a27c3b 3px solid;
+}
+.indexCenter .inner .centermod .nav h1 {
+	color: #a27c3b;
+	border-bottom: #a27c3b 1px solid;
+	margin: 0 -11px;
+	line-height: 30px;
+	font-size: 14px;
+	padding-left: 11px;
+}
+.indexCenter .inner .centermod .nav ul {
+	width: 142px;
+	list-style: none;
+}
+.indexCenter .inner .centermod .nav ul li {
+	display: block;
+	line-height: 32px;
+	width: 142px;
+	font-size: 17px;
+	font-family: Arial, "微软雅黑";
+	color: #a37d3b;
+	margin-top: 8px;
+	text-align: center;
+	cursor: pointer;
+}
+.indexCenter .inner .centermod .nav ul li:hover, .indexCenter .inner .centermod .nav ul li.curret {
+	color: #311f07;
+	background: url(../images/smallnavlibg.gif) no-repeat;
+}
+.indexCenter .inner .rightmod {
+	width: 580px;
+	float: left;
+	overflow: hidden;
+	padding: 32px 35px 33px;
+	background: #f7d8aa;
+	height: 589px;
+	color: #311f07;
+	font-size: 15px;
+	font-family: Arial, "微软雅黑";
+	display: none;
+	min-height: 300px;
+}
+.indexCenter .inner .rightmod h1 {
+	width: 100%;
+	background: #311f07;
+	color: #fff;
+	line-height: 36px;
+	margin-bottom: 20px;
+	text-align: left;
+	font-size: 17px;
+	font-weight: normal;
+}
+.indexCenter .inner .rightmod span {
+	background: #a27c3b;
+	padding: 0 10px;
+	display: inline-block;
+	line-height: 36px;
+	margin-right: 10px;
+}
+.indexCenter .inner .rightmod p {
+	padding: 16px 8px;
+	line-height: 26px;
+	border-bottom: 1px #c7a672 solid;
+	border-top: 1px #fdeed6 solid;
+}
+#Center {
+	border-bottom: 1px solid #0d0d0d;
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 15px;
+	min-height: 1360px
+}
+.CenterCon {
+	width: 970px;
+	margin: 50px auto;
+}
+.CenterConLeftMod {
+	float: left;
+	/*overflow: hidden;*/
+	height: 100%;
+	width: 200px;
+}
+.CenterConRighttMod {
+	float: right;
+	width: 760px;
+	overflow: hidden;
+	height: 100%;
+	min-height: 1000px;
+}
+.Slotleftmod {
+	width: 198px;
+	height: 387px;
+	border: 1px solid #2a2a2a;
+	background: url(../images/Slotleftmod_bg.jpg);
+	margin-bottom: 10px;
+}
+.Slotleftmod:hover {
+	border: 1px solid #9c7735;
+}
+.jackpotgamebtn a {
+	width: 111px;
+	height: 30px;
+	padding-left: 69px;
+	background: url(../images/jackpotgamebtn.jpg);
+	margin: 0 auto 5px auto;
+	color: #fff;
+	display: block;
+	font-size: 15px;
+	line-height: 30px;
+}
+.jackpotgamebtn a:hover {
+	background: url(../images/jackpotgamebtn_m.jpg);
+}
+.Slotleftmod ul {
+	width: 169px;
+	height: 235px;
+	margin: 0 auto;
+	list-style: none;
+}
+.Slotleftmod li {
+	width: 106px;
+	height: 39px;
+	display: block;
+	color: #595959;
+	font-size: 15px;
+	font-family: "微软雅黑";
+	line-height: 39px;
+	background: url(../images/slotnavbg.jpg) no-repeat;
+	cursor: pointer;
+	padding-left: 64px;
+}
+.Slotleftmod li.s1 {
+	background-position: 0 0;
+}
+.Slotleftmod li.s2 {
+	background-position: 0 -39px;
+}
+.Slotleftmod li.s3 {
+	background-position: 0 -78px;
+}
+.Slotleftmod li.s4 {
+	background-position: 0 -117px;
+}
+.Slotleftmod li.s5 {
+	background-position: 0 -156px;
+}
+.Slotleftmod li.s6 {
+	background-position: 0 -195px;
+}
+.Slotleftmod li.s1:hover, .Slotleftmod li.s1.curret {
+	background-position: -169px 0;
+	color: #9c7735;
+}
+.Slotleftmod li.s2:hover, .Slotleftmod li.s2.curret {
+	background-position: -169px -39px;
+	color: #9c7735;
+}
+.Slotleftmod li.s3:hover, .Slotleftmod li.s3.curret {
+	background-position: -169px -78px;
+	color: #9c7735;
+}
+.Slotleftmod li.s4:hover, .Slotleftmod li.s4.curret {
+	background-position: -169px -117px;
+	color: #9c7735;
+}
+.Slotleftmod li.s5:hover, .Slotleftmod li.s5.curret {
+	background-position: -169px -156px;
+	color: #9c7735;
+}
+.Slotleftmod li.s6:hover, .Slotleftmod li.s6.curret {
+	background-position: -169px -195px;
+	color: #9c7735;
+}
+.Jackpot {
+	width: 186px;
+	height: 56px;
+	margin: 5px 7px 10px 7px;
+	padding-top: 46px;
+	font-size: 20px;
+	color: #ffdf1b;
+	text-align: center;
+	background: url(../images/jackpotbg.jpg);
+}
+.Leftbanner {
+	display: block;
+	border: 1px solid #2a2a2a;
+	width: 198px;
+	height: 260px;
+	background: url(../images/bannerad.jpg);
+	margin-bottom: 10px;
+}
+.Leftbanner:hover {
+	display: block;
+	border: 1px solid #9c7735;
+}
+.Leftservice {
+	display: block;
+	border: 1px solid #2a2a2a;
+	width: 198px;
+	height: 210px;
+	background: url(../images/rankboard/servicebgPT.jpg);
+	margin-bottom: 10px;
+}
+.Leftservice table {
+	margin: 40px 30px 20px 52px;
+	color: #b99557;
+	line-height: 32px;
+}
+.Leftservice a {
+	color: #b99557;
+	text-decoration: none;
+}
+.Leftservice a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.Leftservice:hover {
+	display: block;
+	border: 1px solid #9c7735;
+}
+#Banner {
+	width: 100%;
+	overflow: visible;
+	background: #000;/*min-height:335px;*/
+}
+.BannerCon {
+	width: 1050px;
+	margin: 0 auto;
+}
+#TopGameTabT li a {
+	color: #705424;
+}
+#TopGameTabT li.curret a {
+	color: #FFFFFF;
+}
+
+#new_slides .owl-dots {
+    width: 1080px;
+    text-align: center;
+    list-style: none;
+    position: absolute;
+    z-index: 1000;
+    bottom: -25px;
+
+}
+
+ #new_slides .owl-dots button {
+    width: 26px;
+    height: 24px;
+    padding-top: 11px;
+    background-color: transparent;
+    overflow: hidden;
+    float: none;
+}
+#new_slides .owl-dots button.active{
+	background-position: 0 0;
+}
+ #new_slides .owl-dots button.active span , #new_slides .owl-dots button:hover span  {
+	background: #9e7837 !important;
+}
+/*游戏老虎机真人区块*/
+.GameSlot {
+	width: 760px;
+	color: #9d7836;
+	text-align: center;
+	line-height: 2;
+	overflow: hidden;
+}
+.GameSlot {
+	list-style: none;
+	width: 760px;
+}
+.GameSlot li {
+	width: 360px;
+	display: inline-block;
+	vertical-align: top;
+ *display: inline;
+ *zoom: 1;
+	margin-left: 20px;
+	float: left;
+	color: #9d7836;
+	position: relative;
+}
+.GameSlot li:hover {
+	color: #FFF;
+}
+.GameSlotbtn {
+}
+/*170804*/
+.GameSlotbtn:last-child a {
+	margin-right: 0px;
+	float: right
+}
+/**/
+.GameSlotbtn a:hover, .GameSlotsbtn a:hover {
+	background: #9c7735;
+	-webkit-box-shadow: 1px 1px #a88d5b inset;
+	-moz-box-shadow: 1px 1px #a88d5b inset;
+	box-shadow: 1px 1px #a88d5b inset;
+	color: #fff
+}
+.GameSlots {
+	width: 760px;
+	color: #9d7836;
+	text-align: center;
+	line-height: 2;
+	overflow: hidden;
+}
+ul.GameSlots {
+	list-style: none;
+	width: 750px;
+	margin-left: 10px;
+	position: relative;
+}
+ul.GameSlots li {
+	width: 240px;
+	display: inline-block;
+	vertical-align: top;
+ *display: inline;
+ *zoom: 1;
+	margin-left: 10px;
+	float: left;
+	color: #9d7836;
+	position: relative;
+}
+ul.GameSlots li:hover {
+	color: #FFF;
+}
+.GameSlotbtn a, .GameSlotsbtn a {
+	margin: 0px 0 3px;
+	line-height: 25px;
+	width: 174px;
+	display: inline-block;
+	text-align: center;
+	background: #9c7735;
+	-webkit-box-shadow: 1px 1px #a88d5b inset;
+	-moz-box-shadow: 1px 1px #a88d5b inset;
+	box-shadow: 1px 1px #a88d5b inset;
+	color: #2f1d05;
+	/*
+	background:#343434;
+	-webkit-box-shadow: 1px 1px #727272 inset;
+	-moz-box-shadow: 1px 1px #727272 inset;
+	box-shadow: 1px 1px #727272 inset;
+	border:1px #000 solid;
+	color:#9b9b9b;
+*/
+	border-radius: 5px;
+	margin-right: 8px;
+}
+.GameSlotsbtn a {
+	width: 113px;
+	margin-right: 10px;
+}
+/*170804*/
+.GameSlotsbtn:last-child a {
+	margin-right: 0px;
+}
+/**/
+.Gamenav {
+	margin: 0 auto;
+	text-align: center;
+	cursor: pointer
+}
+.Gamenav ul {
+	list-style: none;
+	margin: 0 auto;
+	width: 100%;
+	overflow: hidden;
+	margin: 30px 0 15px;
+	display: inline-block;
+}
+.Gamenav li {
+	width: 11px;
+	height: 11px;
+	background: url(../images/bannericon.jpg) -16px 0;
+	text-indent: -9999px;
+	margin-right: 3px;
+	display: inline-block;
+}
+.Gamenav li:hover, .Gamenav li.curret {
+	background: url(../images/bannericon.jpg) 0 0;
+}
+.GameSlotjackpot {
+	color: #fb3301;
+	font-size: 14px;
+	text-align: center;
+	width: 100%;
+	line-height: 25px;
+	min-height: 25px;
+	background: url(../images/slotjackpot.jpg);
+	margin: 3px 0 0;
+	display: inline-block;
+}
+.GameSlotjackpot.none {
+	margin: 3px 0 0;
+	background: none;
+}
+.GameSlotsjackpot {
+	color: #fb3301;
+	font-size: 14px;
+	text-align: center;
+	width: 240px;
+	line-height: 25px;
+	background: url(../images/slotjackpots.jpg);
+	margin: 3px 0 0;
+	display: inline-block;
+}
+.GameSlotsjackpot.none {
+	height: 25px;
+	display: inline-block;
+	background: none;
+}
+.GameLiveInfo {
+	float: right;
+	width: 720px;
+	color: #999999;
+	margin-bottom: 20px;
+	background: url(../images/gamelivetittle.jpg) no-repeat top left #1b1b1b;
+	padding: 50px 10px 0 10px;
+}
+.GameLives {
+	width: 770px;
+	color: #9d7836;
+}
+ul.GameLives {
+	list-style: none;
+	width: 765px;
+	margin-left: -5px;
+}
+ul.GameLives li {
+	width: 228px;
+	display: inline-block;
+	vertical-align: top;
+ *display: inline;
+ *zoom: 1;
+	margin-left: 20px;
+	border: 1px #000 solid;
+	margin-bottom: 20px;
+	background: #100c06;
+}
+ul.GameLives li img {
+	width: 228px;
+	height: 269px;
+}
+ul.GameLives li:hover {
+	color: #FFF;
+	border: 1px #9c7735 solid;
+}
+ul.GameLives li:hover a {
+	color: #FFF;
+}
+.GameLivesinfo {
+	width: 120px;
+	color: #311f07;
+	height: 36px;
+	display: block;
+	background: #ae894a;
+	padding-left: 10px;
+	line-height: 36px;
+	float: left;
+	border-top: 1px #000 solid;
+}
+.GameLivesplay a {
+	width: 98px;
+	display: block;
+	background: #311f07;
+	text-align: center;
+	line-height: 36px;
+	float: left;
+	color: #9d7836;
+	border-top: 1px #000 solid;
+	text-decoration: none;
+}
+.GameLive {
+	width: 770px;
+	color: #9d7836;
+}
+ul.GameLive {
+	list-style: none;
+	width: 780px;
+	margin-left: 0;
+}
+ul.GameLive li {
+	width: 358px;
+	display: inline-block;
+	vertical-align: top;
+ *display: inline;
+ *zoom: 1;
+	margin-left: 15px;
+	border: 1px #000 solid;
+	margin-bottom: 20px;
+	background: #100c06;
+}
+ul.GameLive li img {
+	width: 358px;
+	height: 272px;
+}
+ul.GameLive li:hover {
+	color: #FFF;
+	border: 1px #9c7735 solid;
+}
+ul.GameLive li:hover a {
+	color: #FFF;
+}
+.GameLiveinfo {
+	width: 250px;
+	color: #311f07;
+	height: 36px;
+	display: block;
+	background: #ae894a;
+	padding-left: 10px;
+	line-height: 36px;
+	float: left;
+	border-top: 1px #000 solid;
+}
+/*注册忘记密码区块*/
+#Regestmod, #ResendPwmod {
+	width: 800px;
+	margin: 30px auto;
+}
+#ResendPwmod .content {
+	background: url(../images/regestmodbg2.jpg);
+	padding: 24px 40px;
+	min-height: 611px;
+	color: #999;
+	text-align: center;
+	margin: 20px 0 5px 0;
+	line-height: 32px;
+}
+#Regestmod .content {
+	background: #101010;
+	border: 1px solid #2a2a2a;
+	box-sizing: border-box;
+	padding: 40px;
+	margin: 20px 0 5px 0;
+	font: 12px/24px "宋体";
+	box-shadow: 0 0 8px #000 inset;
+	color: #747474
+}
+#Regestmod .content .txt_star {
+	color: #c09954;
+	font: 16px/24px "微软雅黑";
+}
+#ResendPwmod .content label {
+	text-align: right;
+	width: 7em;
+	display: inline-block;
+}
+#Regestmod .vcode {
+}
+#Regestmod .content .select {
+	position: relative;
+	display: inline-block;
+	float: left
+}
+#Regestmod .content .select select {
+	display: inline-block;
+	cursor: pointer;
+	line-height: 40px;
+	outline: 0;
+	border: 0;
+	background: none;
+	color: #ac8a4d;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	direction: rtl;
+	padding-right: 20px
+}
+#Regestmod .content .select select::-ms-expand {
+ display: none;
+}
+#Regestmod .content .select select:hover, #Regestmod .content .select select:focus {
+	background: none;
+}
+#Regestmod .content .select__arrow {
+	position: absolute;
+	top: 16px;
+	right: 0;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+	border-style: solid;
+	border-width: 8px 5px 0 5px;
+	border-color: #ac8a4d transparent transparent transparent;
+}
+#Regestmod .content .select select:hover ~ .select__arrow, #Regestmod .content .select select:focus ~ .select__arrow {
+	border-top-color: #ac8a4d;
+}
+#pl_SEX, #pl_EMAIL2 {
+	width: 170px;
+	font: 14px/40px Arial, "微软雅黑";
+
+}
+#pl_QQ {
+	background: url(../images/bg-regqq.jpg) no-repeat right
+}
+#ResendPwmod .content input, #ResendPwmod .content select {
+	border: 1px solid #a9a9a9;
+	margin-left: 3px;
+	height: 24px;
+	line-height: 24px;
+	width: 145px;
+	color: #545454;
+	padding-left: 2px;
+	font-size: 14px;
+}
+#ResendPwmod .title {
+	line-height: 32px;
+	color: #fff;
+	font-size: 13px;
+	padding-left: 30px;
+	padding-right: 5px;
+	margin-bottom: 20px;
+}
+#Regestmod .form {
+	border-radius: 5px;
+	border: 1px solid #313131;
+	background: #1b1b1b;
+	line-height: 40px;
+	height: 40px;
+	padding-left: 12px;
+	box-sizing: border-box;
+	margin-bottom: 10px
+}
+#Regestmod .form.active {
+	border: 1px solid #c09954;
+}
+#Regestmod .form.l {
+	width: 687px
+}
+#Regestmod .form.fl {
+	float: left
+}
+#Regestmod .form hr {
+	width: 1px;
+	height: 38px;
+	border: 0;
+	background: #313131;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 20px;
+	float: left
+}
+#Regestmod .content label {
+	width: auto;
+	margin-right: 5px;
+	font: 14px/40px "微软雅黑";
+	color: #747474;
+	float: left
+}
+#Regestmod .title {
+	background: #222222;
+	height: 40px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #9d7736;
+	width: 100%;
+	padding-left: 8px;
+	text-align: left;
+	font: 12px/40px "宋体";
+	color: #c09954;
+	margin-bottom: 20px
+}
+#ResendPwmod .title {
+	background: url(../images/resendpwmodtitle.jpg) no-repeat;
+}
+.state {
+	padding: 10px 30px;
+	text-align: left;
+	line-height: 1.8;
+}
+#Regestmod .info {
+	color: #c09954;
+	float: right;
+	margin-left: 235px;
+}
+#Regestmod .info a {
+	color: #ffa300;
+}
+#Regestmod .info a:hover {
+	color: #fff;
+}
+#Regestmod .info a.sv {
+	vertical-align: middle;
+	background: url(../images/icon-onlinesv1.png);
+	display: inline-block;
+	width: 19px;
+	height: 17px;
+	text-indent: -999em
+}
+#Regestmod .info a.sv:hover {
+	background: url(../images/icon-onlinesv1.png) 0 -17px;
+}
+#Regestmod ul.eventslt {
+	list-style: none;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 20px
+}
+#Regestmod ul.eventslt li a {
+	width: 168px;
+	height: 83px;
+	display: inline-block;
+	text-indent: -999em
+}
+#Regestmod ul.eventslt li {
+	float: left;
+	background-image: url(../images/eventslt01.png?v=2);
+	margin-right: 107px;
+	height: 83px;
+}
+#Regestmod ul.eventslt li:nth-child(2) {
+	background-position: -168px 0
+}
+#Regestmod ul.eventslt li:last-child {
+	margin-right: 0;
+	background-position: -336px 0
+}
+#Regestmod ul.eventslt li:hover {
+	background-image: url(../images/eventslt02.png?v=2);
+}
+#Regestmod p {
+	text-align: left
+}
+#ResendPwmod .info {
+	color: #311f07;
+	float: felt;
+	margin-left: 430px;
+}
+#ResendPwmod .onlinebtn {
+	float: right;
+	margin: 5px 0;
+	line-height: 21px;
+}
+#ResendPwmod .onlinebtn a {
+	color: #c69e5e;
+	display: inline-block;
+	width: 57px;
+	height: 22px;
+	background: url(../images/onlinesbtn.jpg) no-repeat;
+	padding-left: 28px;
+}
+#ResendPwmod .onlinebtn a:hover {
+	color: #fff
+}
+input[type=checkbox].css-checkbox {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0px;
+	border: 0;
+}
+input[type=checkbox].css-checkbox+label.css-label {
+	padding-left: 22px;
+	height: 17px;
+	width: 17px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	vertical-align: middle;
+	cursor: pointer;
+	opacity: 1;
+	margin: 3px 0 20px 30px
+}
+input[type=checkbox].css-checkbox:checked+label.css-label {
+	background-position: 0 -17px;
+}
+.css-label {
+	background-image: url(../images/check.jpg);
+}
+.code {
+	width: 145px;
+	background: url(../images/bg-code.jpg);
+	display: inline-block;
+	height: 38px;
+	margin-left: -12px;
+	text-align: center;
+	vertical-align: top;
+	border-radius: 4px 0 0 4px
+}
+.regbtn a {
+	margin: 0 auto;
+	background: #1b1b1b;
+	text-align: center;
+	display: block;
+	width: 209px;
+	height: 58px;
+	border-radius: 5px;
+	font: 20px/58px "微软雅黑";
+	color: #747474
+}
+.regbtn a:hover {
+	background: #9d7736;
+	color: #fff
+}
+/*帮助区块*/
+#Helpmod {
+	width: 100%;
+	background: #1b1b1b;
+}
+#Helpmod .Bignav {
+	width: 100%;
+	background: #252525;
+	padding-top: 10px
+}
+#Helpmod .Bignav ul {
+	width: 990px;
+	margin: 0 auto;
+	list-style: none;
+	height: 140px;
+	text-indent: -9999px;
+}
+#Helpmod .Bignav li {
+	float: left;
+	display: block;
+	height: 140px;
+}
+#Helpmod .Bignav ul li.faq {
+	width: 171px;
+	background: url(../images/helpbignav.jpg?v=1) no-repeat 0 0;
+}
+#Helpmod .Bignav ul li.faq:hover, #Helpmod .Bignav ul li.faq.curret {
+	width: 171px;
+	background: url(../images/helpbignav.jpg?v=1) no-repeat 0 -140px;
+}
+#Helpmod .Bignav ul li.pay {
+	width: 160px;
+	background: url(../images/helpbignav.jpg) no-repeat -171px 0;
+}
+#Helpmod .Bignav ul li.pay:hover, #Helpmod .Bignav ul li.pay.curret {
+	width: 160px;
+	background: url(../images/helpbignav.jpg) no-repeat -171px -140px;
+}
+#Helpmod .Bignav ul li.skill {
+	width: 163px;
+	background: url(../images/helpbignav.jpg) no-repeat -332px 0;
+}
+#Helpmod .Bignav ul li.skill:hover, #Helpmod .Bignav ul li.skill.curret {
+	width: 163px;
+	background: url(../images/helpbignav.jpg) no-repeat -332px -140px;
+}
+#Helpmod .Bignav ul li.rule {
+	width: 162px;
+	background: url(../images/helpbignav.jpg) no-repeat -495px 0;
+}
+#Helpmod .Bignav ul li.rule:hover, #Helpmod .Bignav ul li.rule.curret {
+	width: 162px;
+	background: url(../images/helpbignav.jpg) no-repeat -495px -140px;
+}
+#Helpmod .Bignav ul li.resp {
+	width: 162px;
+	background: url(../images/helpbignav.jpg) no-repeat -657px 0;
+}
+#Helpmod .Bignav ul li.resp:hover, #Helpmod .Bignav ul li.resp.curret {
+	width: 162px;
+	background: url(../images/helpbignav.jpg) no-repeat -657px -140px;
+}
+#Helpmod .Bignav ul li.contact {
+	width: 171px;
+	background: url(../images/helpbignav.jpg) no-repeat -819px 0;
+}
+#Helpmod .Bignav ul li.contact:hover, #Helpmod .Bignav ul li.contact.curret {
+	width: 171px;
+	background: url(../images/helpbignav.jpg) no-repeat -819px -140px;
+}
+#Helpmod .subnavs {
+	width: 970px;
+	margin: 0 auto -41px auto;
+	padding-top: 10px;
+	height: 31px;
+	text-align: center;
+	display: none;
+	cursor: pointer;
+}
+#Helpmod .subnavs ul {
+	list-style: none;
+	width: auto;
+	margin: 0 auto;
+	color: #311f07;
+}
+#Helpmod .subnavs ul li {
+	padding: 0 20px;
+	float: left;
+	color: #311f07;
+	text-decoration: none;
+	float: none;
+	border: 0;
+	display: inline-block;
+	width: auto;
+	height: 2epx;
+	margin-left: 2px;
+}
+#Helpmod .subnavs li:hover, #Helpmod .subnavs li.curret {
+	color: #fff;
+	background: #311f07;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	line-height: 25px;
+	margin-top: 1px;
+}
+#Helpmod .subnavs#faqsub {
+	background: url(../images/helpsubnavbg.jpg) no-repeat 0 0;
+}
+#Helpmod .subnavs#paysub {
+	background: url(../images/helpsubnavbg.jpg) no-repeat 0 -42px;
+}
+#Helpmod .subnavs#rulesub {
+	background: url(../images/helpsubnavbg.jpg) no-repeat 0 -84px;
+}
+#Helpmod .subnavs#respsub {
+	background: url(../images/helpsubnavbg.jpg) no-repeat 0 -126px;
+}
+.CenterCon .Helpcon {
+	border: 1px #9c7735 solid;
+	background: #101010;
+	float: right;
+	color: #969696;
+	width: 700px;
+	min-height: 310px;
+	margin-bottom: 50px;
+	overflow: hidden;
+	padding: 15px 20px;
+	border-radius: 3px;
+	-moz-border-radius: 3px; /* Firefox 3.6 and earlier */
+	display: none;
+}
+.CenterCon .Helpcon ol {
+	margin: 15px 20px;
+}
+.CenterCon .Helpcon p {
+	margin-bottom: 10px;
+}
+.CenterCon .Helpcon#resp1 a, .CenterCon .Helpcon#resp2 a, .CenterCon .Helpcon#resp3 a, .CenterCon .Helpcon#resp4 a, .CenterCon .Helpcon#resp5 a {
+	color: #969696;
+}
+.CenterCon .Helpcon#contact {
+	border: 1px #9c7735 solid;
+	background: #101010;
+	float: right;
+	color: #595959;
+	width: 890px;
+	min-height: 500px;
+	margin-bottom: 50px;
+	overflow: hidden;
+	padding: 30px 40px;
+	border-radius: 3px;
+	-moz-border-radius: 3px; /* Firefox 3.6 and earlier */
+	display: none;
+}
+.CenterCon .Helpcon#contact h1 {
+	color: #ae894a;
+	font-size: 16px;
+	padding-left: 65px;
+}
+.CenterCon .Helpcon#contact p {
+	padding-left: 65px;
+	width: 210px;
+}
+.block a {
+	color: #957a4d
+}
+.block {
+	width: 255px;
+	float: left;
+	background-position: top left;
+	margin-bottom: 30px;
+}
+.block1 {
+	width: 550px;
+	height: 350px;
+	float: right;
+	background: url(../images/contact_bg2.jpg) no-repeat top left;
+}
+.block1 a {
+	color: #ffffff
+}
+.block1 a:hover {
+	color: #ffdf1b
+}
+.CenterCon .Helpcon h1 {
+	font-size: 16px;
+	color: #ae894a;
+	line-height: 30px;
+	margin: 8px 0;
+}
+.faqContent {
+	border-top: #343434 1px solid;
+	border-left: #343434 1px solid;
+	border-right: #343434 1px solid;
+	font-size: 15px;
+}
+.faqContent a {
+	color: #fff
+}
+.faqContent ul {
+	list-style: none;
+}
+.faqContent div.qa_title {
+	background: url(../images/helpsorrow.jpg) no-repeat center left #181818;
+	padding: 5px 5px 5px 28px;
+	border-bottom: #343434 1px solid;
+	color: #ae894a;
+	cursor: pointer;
+}
+.faqContent div.qa_title_on {
+	background: url(../images/helpsorrowdown.jpg) no-repeat center left #181818;
+}
+.faqContent div.qa_content {
+	background: #101010;
+	padding: 10px;
+	border-bottom: #343434 1px solid;
+}
+.subcontsnav {
+	width: 100%;
+	margin: 10px 0 20px;
+	font-size: 16px;
+	overflow: hidden;
+	display: none;
+	color: #747474;
+}
+.subcontsnav ul {
+	list-style: none;
+}
+.subcontsnav li a {
+	color: #747474;
+	text-decoration: none;
+}
+.subcontsnav li:hover, .subcontsnav li.curret {
+	color: #ae894a;
+	font-weight: bold;
+	text-decoration: none;
+}
+/*會員中心區塊*/
+#Membermod {
+	width: 100%;
+	background: #1b1b1b;
+}
+#Membermod .Topnav {
+	width: 100%;
+	background: #252525;
+	padding-top: 10px
+}
+#Membermod .Topnav ul {
+	width: 800px;
+	margin: 0 auto;
+	list-style: none;
+	height: 50px;
+	text-indent: -9999px;
+}
+#Membermod .Topnav li {
+	float: left;
+	background: url(../images/mebermodtopnavbg2018.jpg) no-repeat;
+	display: block;
+	height: 50px;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+#Membermod .Topnav li.mine {
+	width: 108px;
+	background-position: 0 0;
+}
+#Membermod .Topnav li.mine:hover, #Membermod .Topnav li.mine.curret {
+	background-position: 0 -50px;
+}
+#Membermod .Topnav li.turnin {
+	width: 97px;
+	background-position: -108px 0;
+}
+#Membermod .Topnav li.turnin:hover, #Membermod .Topnav li.turnin.curret {
+	background-position: -108px -50px;
+}
+#Membermod .Topnav li.turnout {
+	width: 97px;
+	background-position: -205px 0;
+}
+#Membermod .Topnav li.turnout:hover, #Membermod .Topnav li.turnout.curret {
+	background-position: -205px -50px;
+}
+#Membermod .Topnav li.points {
+	width: 97px;
+	background-position: -302px 0;
+}
+#Membermod .Topnav li.points:hover, #Membermod .Topnav li.points.curret {
+	background-position: -302px -50px;
+}
+#Membermod .Topnav li.bank {
+	width: 97px;
+	background-position: -399px 0;
+}
+#Membermod .Topnav li.bank:hover, #Membermod .Topnav li.bank.curret {
+	background-position: -399px -50px;
+}
+#Membermod .Topnav li.history {
+	width: 97px;
+	background-position: -496px 0;
+}
+#Membermod .Topnav li.history:hover, #Membermod .Topnav li.history.curret {
+	background-position: -496px -50px;
+}
+#Membermod .Topnav li.special {
+	width: 97px;
+	background-position: -593px 0;
+}
+#Membermod .Topnav li.special:hover, #Membermod .Topnav li.special.curret {
+	background-position: -593px -50px;
+}
+#Membermod .Topnav li.messege {
+	width: 110px;
+	background-position: -690px 0;
+}
+#Membermod .Topnav li.messege:hover, #Membermod .Topnav li.messege.curret {
+	background-position: -690px -50px;
+}
+.CenterCon .Membercon {
+	width: 798px;
+	margin: -30px auto 0 auto;
+	border: 1px #9c7735 solid;
+	background: #101010;
+	color: #969696;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 3px;
+	-moz-border-radius: 3px; /* Firefox 3.6 and earlier */
+	display: none;
+	padding-bottom: 20px
+}
+.CenterCon .Membercon .leftmod {
+	width: 126px;
+	border-right: 1px #000000 solid;
+	background: #0b0b0b;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	padding: 30px 20px;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+}
+.CenterCon .Membercon .leftmod a, .CenterCon .Membercon .leftmod a:hover {
+	text-decoration: none;
+	display: block;
+	width: 100%;
+}
+.CenterCon .Membercon .leftmod a {
+	color: #595959;
+}
+.CenterCon .Membercon .leftmod a:hover {
+	color: #fff;
+}
+.CenterCon .Membercon .leftmod .leftsubnav ul {
+	list-style: none;
+	clear: both;
+}
+.CenterCon .Membercon .leftmod .leftsubnav ul li {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 8px;
+	color: #595959;
+	background: #202020;
+	border-radius: 2px;
+	-moz-border-radius: 2px; /* Firefox 3.6 and earlier */
+	cursor: pointer;
+	line-height: 30px;
+	width: 126px;
+}
+.CenterCon .Membercon .leftmod .leftsubnav ul li:hover, .CenterCon .Membercon .leftmod .leftsubnav ul li.curret {
+	color: #fff;
+	background: #9c7735;
+	border-radius: 2px;
+	-moz-border-radius: 2px; /* Firefox 3.6 and earlier */
+	border-top: 1px solid #c09952;
+	border-left: 1px solid #c09952;
+	height: 29px;
+	line-height: 28px;
+	width: 124px;
+	padding-right: 1px;
+}
+.CenterCon .Membercon .rightmod {
+	width: 590px;
+	border-left: 1px #222 solid;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	padding: 15px 20px 20px;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+}
+.CenterCon .Membercon .rightmod p {
+	line-height: 3;
+}
+.CenterCon .Membercon h1 {
+	color: #ae894a;
+	font-size: 13px;
+	line-height: 40px;
+}
+#holder {
+	overflow: hidden;
+	position: relative;
+}
+.collectgamebtn {
+	width: 111px;
+	height: 30px;
+	padding-left: 69px;
+	margin: 0 auto 5px auto;
+	display: block;
+	font-size: 15px;
+	line-height: 30px;
+	background: url(../images/collectgamebtn.jpg);
+	cursor: pointer;
+}
+.collectgamebtn:hover {
+	background: url(../images/collectgamebtn.jpg) 0 -30px;
+}
+.selectservice span::after, .lang span::after {
+	background: url(../images/dropdown-asrrow.png);
+	width: 11px;
+	height: 9px;
+	content: " ";
+	vertical-align: middle;
+	display: inline-block;
+	margin-left: 8px
+}
+/*170809NEW*/
+.lang {
+	float:left;
+	display: inline-block;
+	padding: 0 9px 0 8px;
+	font: 13px/28px Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #322008;
+	cursor: pointer;
+	position: relative;
+}
+/*END*/
+.lang span {
+	color: #fff
+}
+.lang:hover {
+	background: #876327
+}
+.lang:hover span {
+	color: #ffdf1c;
+}
+.lang ul.sub-nav, .selectservice ul.sub-nav {
+	width: 100%;
+	display: none;
+	position: absolute;
+	z-index: 999;
+	list-style: none;
+	padding-top: 5px;
+	margin-left: -10px;
+	background: url(../images/subnavulbg.gif) no-repeat top right
+}
+.lang ul.sub-nav li, .selectservice ul.sub-nav li {
+	background: #bbbbbb;
+	border-bottom: 1px #828282 solid;
+	border-top: 1px #cfcfcf solid;
+	padding-left: 10px;
+	color: #515151;
+	min-width: 100%-10%;
+}
+.lang ul.sub-nav li:nth-child(1), .selectservice ul.sub-nav li:nth-child(1) {
+	border-top: 0;
+}
+.lang ul.sub-nav li.active {
+	background: url(../images/tick.png) #bbbbbb no-repeat 115px center;
+}
+.lang ul.sub-nav li a, .selectservice ul.sub-nav li a {
+	color: #515151;
+	display: block;
+	margin-left: -10px;
+	padding-left: 10px
+}
+.lang ul.sub-nav li a:hover, .selectservice ul.sub-nav li a:hover {
+	background: #dfdfdf;
+	color: #292929;
+}
+/*常见问题左栏*/
+.QLeftMod {
+	width: 130px;
+	background: url(../images/bg-QLeftmod.jpg) no-repeat top left #1b1b1b;
+	float: left;
+}
+.QLeftMod h1 {
+	font: bold 15px/35px "微软雅黑";
+	width: 123px;
+	text-align: center;
+	color: #fff
+}
+.QLeftMod li {
+	width: 100px;
+	padding-right: 7px;
+	background: url(../images/bg-QLeftmodli.jpg) no-repeat;
+	display: block;
+	height: 35px;
+	color: #fff;
+	margin-top: 2px;
+	padding-left: 23px;
+	font: 12px/35px "宋体";
+	cursor: pointer
+}
+.QLeftMod li:hover, .QLeftMod li.active {
+	background: url(../images/bg-QLeftmodli_m.jpg) no-repeat;
+}
+.QRightMod {
+	width: 1028px;
+	float: right;
+	display: none
+}
+.QRightMod h1 {
+	width: 100%;
+	font: 16px/36px "微软雅黑";
+	color: #ba9355;
+}
+.QRightModCon {
+	background: #101010;
+	border: 1px solid #2a2a2a;
+	padding: 28px 18px;
+	overflow: hidden
+}
+.QRightModConInn {
+	width: 986px;
+	height: 458px;
+	background: #1e160c;
+	border: 1px solid #6c4f2e;
+	overflow: auto
+}
+.QRightModConInn ol {
+	padding: 25px 30px 25px 55px;
+}
+.QRightModConInn ol li {
+	margin-bottom: 8px;
+	color: #ba9355;
+	font: 12px/31px "宋体";
+}
+.QRightModConInn ol li p {
+	color: #9f9f9f;
+	font: 12px/25px "宋体";
+}
+.QRightModConInn ol li p a {
+	color: #fff;
+	text-decoration: none
+}
+.QRightModConInn ol li p a:hover {
+	text-decoration: underline
+}
+.QRightMod ul.NGd {
+	width: 100%;
+	overflow: hidden
+}
+.QRightMod ul.NGd li {
+	display: block;
+	float: left;
+	margin-right: 2px;
+	list-style: none;
+	height: 33px;
+	text-align: center;
+	color: #886133;
+	font: 12px/33px "宋体";
+	background: #291d0f;
+	width: 341px;
+	cursor: pointer
+}
+.QRightMod ul.NGd li a {
+	color: #886133;
+	display: block;
+	width: 341px;
+}
+.QRightMod ul.NGd li:nth-child(3) {
+	margin-right: 0
+}
+.QRightMod ul.NGd li:hover, .QRightMod ul.NGd li a:hover, .QRightMod ul.NGd li.active {
+	background: #543f1e;
+	color: #fff
+}
+.guidepic {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.guidepic ul {
+	list-style: none;
+	overflow: hidden;
+	margin: 0 auto
+}
+.guidepic li {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	color: #b89646
+}
+.guidepic li p {
+	margin-bottom: 10px;
+}
+.guidepic li img {
+	width: 860px;
+	height: 390px
+}
+.btnL, .btnR {
+	display: block;
+	width: 21px;
+	height: 35px;
+	cursor: pointer;
+	top: 50%;
+	margin-top: -17px;
+	position: absolute;
+	background: url(../images/Guide/guidepicarr.jpg)
+}
+.btnL {
+	left: 10px;
+}
+.btnR {
+	right: 10px;
+	background: url(../images/Guide/guidepicarr.jpg) 0 -35px
+}
+.hidden {
+	display: none
+}
+#gamewindow_Center .CenterCon {
+	width: 800px;
+	margin: 0px;
+}
+
+#gamewindow_Center .CenterCon .Membercon{
+    margin: 0px;
+    border: 2px #9c7735 solid;
+    border-radius: 0px 0px 3px 3px;
+}
+#gamewindow_Center .CenterCon .Membercon .rightmod{
+    width: 610px;
+    height: 565px;
+    overflow: auto;
+}
+#gamewindow_Center .CenterCon .Membercon{
+    width: 818px;
+}

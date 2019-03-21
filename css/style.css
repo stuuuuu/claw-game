@@ -233,8 +233,8 @@ embed {
     background-position: center;
     position: relative;
     display: block;
-    float: left;
-    left: 33%;
+    /*float: left;*/
+    left: 50%;
     cursor: pointer;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -698,10 +698,11 @@ div[class*="ticket"] {
     z-index: 3;
 }
 
-.ticket-dep1-active p, .ticket-dep2-inactive p, .ticket-dep3-inactive p {
-        color: #ffd800;
+.ticket-dep1-inactive p, .ticket-dep2-inactive p, .ticket-dep3-inactive p,
+.ticket-dep1-active p, .ticket-dep2-active p, .ticket-dep3-active p {
+        color: red;
     text-align: center;
-    text-shadow: 0 0 2px black, 0 0 2px black;
+    /*text-shadow: 0 0 2px black, 0 0 2px black;*/
     font-size: 19pt;
     top: 20px;
     position: relative;
@@ -709,15 +710,21 @@ div[class*="ticket"] {
     line-height: 30px;
 }
 
-.ticket-dep2-inactive p{
+.ticket-dep2-active p, .ticket-dep3-active p {
+    top: 25px;
+}
+
+
+.ticket-dep2-inactive p, .ticket-dep3-inactive p{
     top: 26px;
     color: #818181;
 }
 
-.ticket-dep3-inactive p {
+/*.ticket-dep3-inactive p {
     top: 26px;
     color: #818181;
 }
+*/
 
 .ticket-dep1-inactive {
     background-image: url(../img/blank2.png);
@@ -730,9 +737,9 @@ div[class*="ticket"] {
 .ticket-dep2-active {
     background-image: url(../img/blank1.png);
     left: 20px;
-    top: 95px;
+    top: 90px;
     z-index: 3;
-    display: none;
+    /*display: none;*/
     width: 226px !important;
     height: 114px !important;
 
@@ -746,14 +753,15 @@ div[class*="ticket"] {
     top: 90px;
     width: 226px !important;
     height: 114px !important;
+        display: none;
 }
 
 .ticket-dep3-active {
     background-image: url(../img/blank1.png);
     left: 53px;
-    top: 95px;
+    top: 90px;
     z-index: 3;
-    display: none;
+    /*display: none;*/
     width: 226px !important;
     height: 114px !important;
 }
@@ -763,40 +771,39 @@ div[class*="ticket"] {
     left: 53px;
     width: 236px;
     height: 113px;
+    display: none;
     top: 90px;
     width: 226px !important;
     height: 114px !important;
 }
 
-.g-300 {
+.green {
     background-image: url(../img/green-btn.png);
     z-index: 5;
-    left: -18px;
 }
 
-.gr-300 {
+.gray {
     background-image: url(../img/green-btn-grey.png);
     z-index: 4;
-    left: -18px;
 }
 
-.r-300 {
+.red {
     background-image: url(../img/red-btn.png);
-    z-index: 3;
+    z-index: 4;
+}
+
+
+.g-300, .r-300, .gr-300{
     left: -18px;
-
 }
 
-.gr-5000,
-.gr-last-5000 {
-    background-image: url(../img/grey-btn.png);
-}
 
-.gr-5000 {
+
+.g-5000, .r-5000, .gr-5000 {
     left: 180px;
 }
 
-.gr-last-5000 {
+.g-3000, .r-3000, .gr-3000 {
     left: 381px;
 }
 
@@ -804,8 +811,12 @@ div[class*="ticket"] {
 .g-300,
 .r-300,
 .gr-300,
+.g-5000,
+.r-5000,
 .gr-5000,
-.gr-last-5000 {
+.g-3000,
+.r-3000,
+.gr-3000{
     width: 264px;
     height: 95px;
     background-repeat: no-repeat;
@@ -859,7 +870,11 @@ div[class*="ticket"] {
     position: absolute;
     top: 57px;
     left: 69px;
-    transform: rotate(-8deg);
+    -webkit-transform: rotate(-8deg);
+       -moz-transform: rotate(-8deg);
+        -ms-transform: rotate(-8deg);
+         -o-transform: rotate(-8deg);
+            transform: rotate(-8deg);
     /*33deg*/
 }
 
@@ -871,8 +886,11 @@ div[class*="ticket"] {
     position: absolute;
     top: 57px;
     left: 150px;
-    transform: rotate(8deg);
-    /*-33deg*/
+    -webkit-transform: rotate(8deg);
+       -moz-transform: rotate(8deg);
+        -ms-transform: rotate(8deg);
+         -o-transform: rotate(8deg);
+            transform: rotate(8deg);
 }
 
 .claw-content {
@@ -1172,7 +1190,7 @@ div[class*="ticket"] {
 
 
 
-/*
+
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -1189,7 +1207,8 @@ div[class*="ticket"] {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-*/
+
+
 .pop-r-title,.pop-a-title{
        position: absolute;
     width: 50%;
@@ -1214,13 +1233,13 @@ div[class*="ticket"] {
 }
 
 .pop-rules-content,.pop-rules-content {
-    top: 97px;
+        top: 85px;
     position: relative;
     line-height: 38px;
     /*border: 1px solid black;*/
-    height: 69%;
+    height: 60%;
     width: 75%;
-    /*overflow-y: scroll;*/
+    overflow-y: scroll;
     display: block;
     margin: auto;
     left: 8px;
@@ -1484,6 +1503,7 @@ div[class*="ticket"] {
     }
       .footer{
           top: 931px !important;
+
     }
 }
 
@@ -2025,7 +2045,7 @@ div[class*="ticket"] {
     display: block;
     margin: auto;
     top: 1041px;
-    left: -142px;
+    left: -556px;
 }
 
 .footer p{

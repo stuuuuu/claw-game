@@ -1,0 +1,47 @@
+<html lang="en" dir="ltr">
+    <head>
+    	<title>CA88</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="favicon.ico">
+    </head>
+    <body>
+        <div class="pop"></div>
+          <div class="pig1"></div>
+            <div class="pig2"></div>
+        <div class="pop-bg">
+            <div class="pop-close"></div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    	<script type="text/javascript" src="js/jquery.min.js"></script>
+    	<script type="text/javascript" src="js/script.js"></script>
+        <script> 
+        $('.pop-close').click(function(){ 
+            $('.featherlight-close', window.parent.document).trigger('click'); 
+            $('.pop, .pop-bg,.pig1,.pig2').fadeOut();
+        }); 
+        // onclick outside element
+        $(function(){               
+            var $win = $(window);
+            var $box = $(".pop-bg");
+             $win.on("click.Bst", function(event){      
+                if ( $box.has(event.target).length == 0 && !$box.is(event.target)){
+                   $('.pop, .pop-bg,.pig1,.pig2').fadeOut();
+                } 
+            });  
+        });
+
+        </script> 
+    </body>
+</html>

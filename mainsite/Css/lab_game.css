@@ -1,0 +1,503 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+img {
+	vertical-align: middle
+}
+body {
+	font-size: 13px;
+
+	line-height: 2;
+	font-family: Arial, "微软雅黑";
+	background: url(../images/lab_game/bg-labbg.jpg) #1a1a1a no-repeat center top;
+}
+
+.lab_Searchbar {
+	width: 970px;
+	background: #00a6ea;
+	height: 50px;
+	margin: 50px auto 5px;
+	box-sizing: border-box;
+	padding: 7px 10px;
+	position: relative;
+	color: #fff;
+	font: 15px/36px "微软雅黑"
+}
+.lab_Searchbar input {
+	background: #00426c;
+	width: 220px;
+	height: 36px;
+	line-height: 36px;
+	color: #ffffff;
+	border: 0;
+	float: left;
+	font: 15px/36px "微软雅黑";
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding: 0 10px;
+	box-shadow: -1px -1px 0 #76dcff inset
+}
+.lab_Searchbar .btn {
+	background: url(../images/lab_game/searchbar_btn.png);
+	width: 28px;
+	height: 28px;
+	border: 0;
+	margin-left: -33px;
+	margin-top: 4px;
+	float: left;
+	text-indent: -9999px;
+	box-shadow: none;
+	cursor: pointer
+}
+.lab_Searchbar span {
+	width: 90px;
+	height: 36px;
+	display: inline-block;
+	border-radius: 5px;
+	margin: 0 20px;
+	color: #004664;
+	background: #a7e5ff;
+	border: 1px solid #7edaff;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 36px
+}
+.lab_Searchbar a{
+	color:#fff;
+	margin-right: 20px;
+}
+.lab_Searchbar a:hover{
+	color:#fff;
+	text-decoration:underline
+}
+.lab_Game {
+	width: 1020px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	background: rgba(27,27,27,.9);
+	padding: 25px;
+	overflow: hidden
+}
+.lab_Game ul {
+	width: 100%;
+	list-style: none;
+	position:relative
+}
+.lab_Game li {
+	width: 230px;
+	font-size: 16px;
+	margin-right: 16px;
+	float: left;
+	margin-bottom: 20px;
+	font: 15px/20px "微软雅黑";
+	text-align: left;
+	position: relative;
+	color: #fff;
+	cursor: pointer
+}
+.lab_Game li:nth-child(4n+0) {
+	margin-right: 0px;
+}
+.lab_Game li span.bar {
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	z-index: 1;
+	background: rgba(0,0,0,.7);
+	text-align: center;
+	font: 13px/30px "新細明體";
+	top: 120px;
+}
+.lab_Game li p {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	font:13px/30px "微软雅黑"
+}
+.lab_Game li img {
+	width: 230px;
+	height: 150px;
+}
+p.chs {
+	width: 100%;
+	list-style: none;
+	text-align: center;
+	overflow: hidden;
+	border-bottom: 1px solid #474747;
+	padding: 10px 0;
+	box-sizing: border-box
+}
+p.chs span {
+	text-align: left;
+	padding: 1px 8px 0 20px;
+	background: url(../images/lab_game/bg-chs.png) no-repeat;
+	font: 13px/16px Arial, "新細明體";
+	color: #7e7e7e;
+}
+p.chs span:last-child {
+	padding: 0 0 0 20px
+}
+p.chs span:nth-child(2) {
+	background: url(../images/lab_game/bg-chs.png) no-repeat 0 -16px;
+	padding-left:25px
+}
+p.chs span:nth-child(3) {
+	background: url(../images/lab_game/bg-chs.png) no-repeat 0 -32px;
+	padding-left:25px
+}
+.btnmod {
+	background: rgba(0,0,0,.8);
+	width: 100%;
+	height: 150px;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	display: none;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+}
+.btnmod .container {
+	width: 230px;
+	height: 150px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.play a, .playfun a, .fav a, .playrule a {
+	display: block;
+	width: 110px;
+	height: 28px;
+	margin: 1px auto;
+	color: #fff;
+	line-height: 30px;
+	border-radius: 5px;
+	font: 15px/28px "微软雅黑"
+}
+.play a:hover, .playfun a:hover, .playrule a:hover, .fav a:hover, .fav.on a:hover {
+	border: 1px solid #00beff;
+	width: 108px;
+	height: 26px;
+	line-height: 26px;
+	color: #00beff;
+	background: #000;
+	margin: 1px auto;
+}
+.fav a:after {
+	content: "加入收藏"
+}
+.fav.on a:after {
+	content: "解除收藏"
+}
+.progressbar {
+	position: relative;
+	width: 129px;
+	height: 10px;
+	float: right;
+	background: #393939;
+	margin-top: 1px;
+	overflow: hidden
+}
+.bar {
+	position: absolute;
+	display: block;
+	height: 10px;
+	background: #ac833f;
+	overflow: hidden;
+}
+.havm {
+	background: #fff;
+	font: 12px/1.5 "宋体";
+	padding: 0 2px;
+	position: absolute;
+	bottom: -8px;
+	z-index: 100;
+	color: #3d3d3d;
+	left: 35px;
+	display: none
+}
+.labGamenav {
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	margin: -20px 0 20px 0
+}
+.labGamenav li {
+	width: 18px;
+	height: 18px;
+	border-radius: 18px;
+	background: #626262;
+	display: inline-block;
+	margin-right: 3px;
+	text-indent: -9999px;
+}
+.labGamenav li a {
+	display: block;
+	width: 18px;
+	height: 18px;
+	list-style: none;
+}
+.labGamenav li:hover, .labGamenav li.current {
+	background-color: #00b5ff;
+}
+
+
+a.swShowPage{
+
+	width: 18px;
+	height: 18px;
+	border-radius: 18px;
+	background: #626262;
+	display: inline-block;
+	margin-right: 5px;
+	text-indent: -9999px;
+
+}
+
+a.swShowPage:hover , a.swShowPage.active {
+	background-color: #00b5ff;
+
+}
+
+.swControls{
+	width: 970px !important;
+}
+
+/*Event background*/
+/*body{
+	background: url(../images/cny/cny-bg.png) center no-repeat rgb(129, 142, 154);
+	background-size: cover;
+}*/
+
+.lab_Game{
+	background: rgba(27,27,27,1);
+}
+
+/*fireworks*/
+	#canvas-container {
+	  height: 100vh;
+	  min-height: 100%;
+	  width: 100%;
+	  min-width: 100%;
+		z-index: -1;
+		position: absolute;
+	}
+			
+	canvas {
+		display: block;
+		z-index: -1;
+		 height: 100vh;
+	  min-height: 100%;
+	  width: 100%;
+	  min-width: 100%;
+	}
+
+.theme-container{
+	position: relative;
+	overflow: hidden;
+	background: url(../images/cny/cny-bg.png) center no-repeat rgb(129, 142, 154);
+	background-size: cover;
+	    z-index: -1;
+}
+
+.event-con{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 1100px;
+	right: 0px;
+	overflow: hidden;
+	z-index: -1
+}
+
+.center-default{
+	margin: 0px auto;
+	width: 1000px;
+	height: 100%;
+	position: relative;
+}
+
+.xmas-event img{
+	max-width: 100%;
+	max-height: 100%
+}
+
+.icon_cny1{
+	top: -8px;
+	left: -195px;
+	width: 100px;
+	animation: balance 3.5s ease-in-out alternate infinite;
+}
+
+.icon_cny2{
+	    top: -17px;
+    left: -474px;
+    width: 401px;
+	animation: balance 4.5s ease-in-out alternate infinite;
+}
+
+.icon_cny3{
+	top: -13px;
+	right: -451px;
+	width: 130px;
+	animation: balance 6.6s ease-in-out alternate infinite;
+}
+
+.icon_cny4{
+	top: -13px;
+	right: -328px;
+	width: 401px;
+	animation: balance 4s ease-in-out alternate infinite;
+}
+
+.icon_cny5{
+	top: -13px;
+	right: -428px;
+	width: 100px;
+	animation: balance 2.4s ease-in-out alternate infinite;
+}
+
+
+.center-default [class*="icon_cny"]{
+	position: absolute;
+	transform-origin: 50% 0
+}
+
+
+#containerF {
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	z-index: -100;
+	pointer-events: none;
+	overflow: hidden;
+}
+
+#pixie{
+	width: 100%;
+	height: 100%;
+	pointer-events: none
+}
+
+
+
+@keyframes spin {
+	50% {
+		transform:rotate(360deg); }
+		100% {
+			transform:rotate(360deg); }
+		}
+
+
+
+
+		@keyframes balance {
+			0%, 100% {
+				transform: rotate(12.5deg);
+			}
+			50% {
+				transform: rotate(-12.5deg);
+			}
+		}
+
+
+
+		/* End Event background */
+
+
+		/* Edit sidebar CS*/
+		.lpp_float_img{
+			right: 70px !important;
+		}
+
+		.css-lppsystem_LivePlus_open_btn{
+			background: url(../images/cny/fr-top1.png?v=4) no-repeat !important;
+		width: 198px !important;
+    height: 216px !important;
+    background-size: 198px 216px !important;
+		}
+
+		.css-lppsystem_close_btn{
+			background: url(../images/cny/img_close.png?v=5) no-repeat !important;
+			width: 26px !important;
+			height: 26px !important;
+			background-size: 26px 26px !important
+		}
+
+		.css-DownloadDeskApp_bg{
+		background: url(../images/cny/fr-mid.png?v=5) no-repeat !important;
+    width: 167px !important;
+    height: 293px !important;
+    background-size: 198px 332px !important;
+    margin-left: 0px;
+    padding-left: 40px;
+        padding-top: 39px;
+		}
+
+		.css-link_btn_download_bg{
+			height:30px !important;
+			padding-top: 18px !important;
+			width: 128px !important;
+			margin-bottom: -7px;
+		}
+
+		.css-link_btn_download{
+		    background: url(../images/cny/fr-btn-web.png?v=5) no-repeat !important;
+    width: 125px !important;
+    height: 47px !important;
+    background-size: 124px 47px !important;
+    position: relative;
+    top: -16px;
+		}
+
+		.css-link_btn_download:hover{
+			/*background: url(../images/cny/btn-web-h.png?v=5) no-repeat !important;*/
+			/*box-shadow: 0px 2px 5px black;
+			border-radius: 10px;*/
+		}
+
+		.css-link_btn_download_android{
+		    background: url(../images/cny/fr-btn-android.png?v=5) no-repeat !important;
+    width: 125px !important;
+    height: 31px !important;
+    background-size: 125px 37px !important;
+    margin: 0px auto !important;
+		}
+
+		.css-link_btn_download_android:hover{
+			/*background: url(../images/cny/btn-android-h.png?v=5) no-repeat !important;*/
+			/*box-shadow: 0px 2px 5px black;
+			border-radius: 10px;
+*/
+		}
+
+		.css-link_btn_download_ios{
+			background: url(../images/cny/fr-btn-ios.png?v=5) no-repeat !important;
+		    width: 125px !important;
+    height: 31px !important;
+    background-size: 125px 37px !important;
+    margin: 0px auto !important;
+		}
+
+		.css-link_btn_download_ios:hover{
+			/*background: url(../images/cny/btn-ios-h.png?v=5) no-repeat !important;*/
+			/*	box-shadow: 0px 2px 5px black;
+			border-radius: 10px;*/
+		}
+
+		.css-link_btn_InstallationNotes{
+		background: url(../images/cny/fr-bot.png?v=5) no-repeat !important;
+width: 199px !important;
+    height: 63px !important;
+    background-size: 198px 63px !important;
+ 
+		}
+
+		/*.css-link_btn_InstallationNotes:hover{
+				background: url(../images/cny/cs-bot-h.png?v=5) no-repeat !important;
+		}*/
+		/* End edit sidebar CS */
